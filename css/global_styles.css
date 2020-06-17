@@ -60,7 +60,6 @@ h3 {
 
 
 /*NAVBAR AND FOOTER*/
-
 nav {
     background-color: var(--white, #ffffff);
     padding: 5px;
@@ -242,3 +241,35 @@ div.footer-hover:hover {
 }
 
 
+/*BUTTON*/
+.inner-button-div {
+    width: 100%;
+    height: 100px; /*OJO:changed from 60 to 100*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-button-link {
+    background-color: transparent;
+    font: bolder 1.2rem 'Scope One', serif;
+    color: var(--blue, #3a4fab);
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.my-button-link .link-hover:hover {
+    background-color: var(--yellow, #f1e72f);
+    color: var(--dark-grey, #404040);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+/*DECORATION*/
+div .circle { /*decoration circles*/
+    background-color: var(--yellow, #f1e72f);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}

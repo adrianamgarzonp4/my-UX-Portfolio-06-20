@@ -2,19 +2,12 @@
 /*ABOUT STYLES************/
 /*************/
 
-/*HEADER: header & decoration*/
+/*HEADER: header*/
 header {
     background-color: var(--blue, #3a4fab);
 }
 
-div .circle { /*decoration circles*/
-    background-color: var(--yellow, #f1e72f);
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-}
-
-/*MAIN: profile photo, button*/
+/*MAIN*/
 .photo-container {
     margin-bottom: 24px;
 }
@@ -23,29 +16,6 @@ div .circle { /*decoration circles*/
     max-width: 100%;
     height: auto;
     box-shadow: 0 5px 10px rgba(0,0,0,0.12)/*, 0 6px 6px rgba(0,0,0,0.23)*/;
-}
-
-.inner-button-div {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-button-link {
-    background-color: transparent;
-    font: bolder 1.2rem 'Scope One', serif;
-    color: var(--blue, #3a4fab);
-    padding: 0px;
-    border: none;
-    cursor: pointer;
-}
-
-.my-button-link .link-hover:hover {
-    background-color: var(--yellow, #f1e72f);
-    color: var(--dark-grey, #404040);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 main section div ul {
@@ -188,7 +158,6 @@ div.rdc1 {
     justify-self: start;
     padding-left: 12px;
 }
-
 
 /*Main - main-grid*/
 .main-grid {
