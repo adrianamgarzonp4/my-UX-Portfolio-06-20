@@ -9,15 +9,35 @@
 }
 
 /*HEADER*/
+nav.hg-4 {
+    background-color: transparent;
+    padding-top: 12px;
+}
+
 h1.hg-1, h2.hg-2, h3.hg-3 {
     text-align: center;
 } 
 
+h1.hg-1 {
+    color: var(--blue, #3a4fab);
+    margin-top: 150px;
+}
+
+h2.hg-2 {
+    margin-top: -12px;
+    font-size: 2.52rem;
+    
+}
+
+h3.hg-3 {
+    font-size: 1.852rem;
+}
+
 .hero-image {
-    background-image: url("images/homepage/joanna-kosinska-1_CMoFsPfso-unsplash.jpg"); /* The image used */
-    /*background-color:#3a4fab; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
+    background-image: url("/Users/adri/Documents/GitHub/my-UX-Portfolio-06-20/images/homepage/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg"); /* The image used */
+    background-color: var(--light-grey, #efefef); /* Used if the image is unavailable*/
+    height: 800px; /* You must set a specified height */
+    background-position: bottom;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
   }
@@ -78,10 +98,13 @@ section.card {
 .button-container {
     background-color: var(--white, #ffffff);
     width: 100%;
+    position: relative;
 }
 
-button.card {
-    width: 30%;
+a.card {
+    text-decoration: none;
+    position: relative;
+    left: -310px;
 }
 
 section.card:hover {
