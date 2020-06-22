@@ -1,3 +1,135 @@
+:root {
+    --black: #000000;
+    --dark-grey: #404040;
+    --white: #ffffff;
+    --blue: #3a4fab;
+    --light-grey: #efefef;
+    --yellow: #f1e72f;
+    font-size: 18px;
+}
+
+/*HEADER*/
+h1.hg-1, h2.hg-2, h3.hg-3 {
+    text-align: center;
+} 
+
+.hero-image {
+    background-image: url("images/homepage/joanna-kosinska-1_CMoFsPfso-unsplash.jpg"); /* The image used */
+    /*background-color:#3a4fab; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+/*MAIN*/
+main {
+    background: linear-gradient(var(--white, #ffffff), var(--light-grey, #efefef), var(--white, #ffffff));
+    position: relative;
+}
+
+/*MAIN - H2*/
+h2.title {
+    font-size: 2.52rem;
+    width: 55%;
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 48px;
+}
+
+/*MAIN - SECTION*/
+p.card, h3.card {
+    color: var(--white, #ffffff);
+    padding-left: 7%;
+    width: 50%;
+    z-index: -1;
+}
+
+h3.card {
+    padding-top: 4%;
+}
+
+p.card {
+    padding-bottom: 3%;
+}
+
+section.card {
+    background-color: var(--blue, #3a4fab);
+    position: relative;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 64px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-img {
+    position: absolute;
+    right: 2%;
+    top: 4%;
+    max-width: 50%;
+    height: auto;
+    z-index: 1;
+}
+
+.nps, .vtl {
+    top: 10%;
+}
+
 .button-container {
-    margin-left: 50px;
+    background-color: var(--white, #ffffff);
+    width: 100%;
+}
+
+button.card {
+    width: 30%;
+}
+
+section.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.50);
+}
+
+/*MAIN - DECORATION*/
+.right-decor {
+    width: 17%;
+    display: grid;
+    grid-template-areas:
+        '. . . . c1'
+        '. c3 c4 . c5'
+        'c6 c7 . c8 .'
+        'c9 . c10 c2 c11'
+        '. . . . c12';
+}
+
+.rdc2 { grid-area: c2}
+.rdc3 { grid-area: c3}
+.rdc4 { grid-area: c4}
+.rdc5 { grid-area: c5}
+.rdc6 { grid-area: c6}
+.rdc7 { grid-area: c7}
+.rdc8 { grid-area: c8}
+.rdc9 { grid-area: c9}
+.rdc10 { grid-area: c10}
+.rdc11 { grid-area: c11}
+.rdc12 { grid-area: c12}
+
+.decoration1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.decoration2 {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    z-index: 3;
+}
+
+.decoration3 {
+    position: absolute;
+    bottom: 0px;
+    right: auto;
+    z-index: 3;   
 }

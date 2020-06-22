@@ -48,6 +48,13 @@ h2 {
 }
 
 h3 {
+    font-family: 'Scope One', serif;
+    color: var(--blue,#3a4fab);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+h4 {
     font-size: 1rem;
 }
 
@@ -55,7 +62,7 @@ h3 {
     font-family: 'Scope One', serif;
     font-weight: bold;
     color: var(--blue, #3a4fab);
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 
