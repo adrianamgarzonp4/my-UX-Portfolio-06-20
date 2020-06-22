@@ -34,7 +34,7 @@ h3.hg-3 {
 }
 
 .hero-image {
-    background-image: url("https://github.com/adrianamgarzonp4/my-UX-Portfolio-06-20/blob/master/images/homepage/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg"); /* The image used */
+    background-image: url("images/homepage/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg"); /* The image used */
     background-color: var(--light-grey, #efefef); /* Used if the image is unavailable*/
     height: 800px; /* You must set a specified height */
     background-position: bottom;
