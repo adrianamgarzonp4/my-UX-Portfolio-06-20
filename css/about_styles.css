@@ -92,71 +92,55 @@ div.rdc1 {
 .rdc12 { grid-area: c12}
 
 /*Main - Skills*/
-.main-skills { 
-    background-color: var(--light-grey, #efefef);
-    display: grid;
-    grid-template-areas: 
-        'heading heading . .'
-        'bullets1 bullets1 bullets2 bullets2';
+section.main-skills { 
+    display: flex;
+    flex-direction: column;
     align-items: start;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.12)/*, 0 6px 6px rgba(0,0,0,0.23)*/;
 }
-.ms-1 { 
-    grid-area: heading;
-    padding-left: 48px;
-    align-self: center;
+
+#list-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
 }
-.ms-2 { 
-    grid-area: bullets1; 
-    justify-self: start;
-    padding-left: 68px;
+
+.ms-1 {
+    padding-left: 35px;
+    margin-block-start: 1.66em;
+    margin-block-end: 0px;
 }
-.ms-3 { 
-    grid-area: bullets2;
-    justify-self: start;
-    padding-left: 68px;
+
+.ms-2, .ms-3 {
+    margin-block-end: 1.66em;
+    margin-left: 50px;
+    width: 50%;
 }
 
 /*Main - Tools*/
-.main-tools { 
-    background-color: var(--light-grey);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.4fr 1fr;
-    grid-column: 24px;
-    margin-top: 36px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.12)/*, 0 6px 6px rgba(0,0,0,0.23)*/;
+section.main-tools { 
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
-.mt-1 { /*heading*/
-    grid-column: 1 / 5;
-    grid-row: 1 / 2;
-    padding-left: 48px;
-    align-self: center;
+
+#list-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.mt-2 { /*design*/
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: start;
-    padding-left: 48px;
+
+.mt-1 {
+    padding-left: 35px;
+    margin-block-start: 1.66em;
+    margin-block-end: 0px;
 }
-.mt-3 { /*ideate*/
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    justify-self: start;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-.mt-4 { /*prototype*/
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    justify-self: start;
-    padding-right: 6px;
-}
-.mt-5 { /*project*/
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-    justify-self: start;
-    padding-left: 12px;
+
+.mt-2, .mt-3, .mt-4, .mt-5 {
+    margin-left: 35px;
+    margin-block-end: 1.66em;
+    width: 20%;
 }
 
 /*Main - main-grid*/
@@ -186,9 +170,11 @@ div.rdc1 {
 .mg-3 { /*skills*/
     grid-column: 1 / 3;
     grid-row: 3 / 4;
+    background-color: var(--light-grey, #efefef);
 }
 .mg-4 { /*tools*/
     grid-column: 1 / 3;
     grid-row: 4 / 5;
+    background-color: var(--light-grey, #efefef);
 }
 

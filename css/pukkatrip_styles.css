@@ -1,0 +1,62 @@
+:root {
+    --black: #000000;
+    --dark-grey: #404040;
+    --white: #ffffff;
+    --blue: #3a4fab;
+    --light-grey: #efefef;
+    --yellow: #f1e72f;
+    font-size: 18px;
+}
+
+/*HEADER*/
+header {
+    position: relative;
+}
+
+.hero-image {
+    background-image: url("/Users/adri/Documents/GitHub/my-UX-Portfolio-06-20/images/pukka_trip/bg.jpg"); /* The image used */
+    background-color: rgba(15, 184, 180, 60%); /* Used if the image is unavailable*/
+    height: 800px; /* You must set a specified height */
+    background-position: right;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+nav.hg-4 {
+    height: 64px;
+  }
+
+header > h1.hg-1 {
+    margin-left: 15%;
+    margin-top: 10%;
+    color: var(--blue, #3a4fab);
+}
+
+header > h2.hg-2 {
+    margin-left: 15%;
+    font-size: 1.852rem;
+    margin-top: 0.6rem;
+    line-height: 2rem;
+}
+
+header h3.hg-3 {
+    margin-left: 15%;
+    font-size: 1.361rem;
+    line-height: 1.5rem;
+}
+
+/*MAIN*/
+main > section {
+    width: 66%;
+    margin: auto;
+}
+
+main > section > div > h2 {
+    font-size: 1.852rem;
+}
+
+main > section > div > h3 {
+    font-size: 1.2rem;
+    color: var(--black, #000000);
+    margin-bottom: -5px;
+}

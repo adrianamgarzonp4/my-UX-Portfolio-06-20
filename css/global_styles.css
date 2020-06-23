@@ -142,8 +142,9 @@ nav ul, footer ul {
 
 /*FOOTER*/
 footer {
-    /*background-color: var(--white, #ffffff);*/
-    background: linear-gradient(#efefef, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    background-color: var(--light-grey, #efefef);
+    /*border-top: solid 2px var(--blue, #3a4fab);*/
+    /*background: linear-gradient(#efefef, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);*/
 }
 
 footer section ul.footer-options { /*ul*/
@@ -152,9 +153,10 @@ footer section ul.footer-options { /*ul*/
 
 footer section ul li a div.footer-option-box p {
     text-align: center;
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: 48px;
+    margin-left: 48px;
     line-height: 1.25rem;
+    font-size: 1rem;
 }
 
 footer section ul li a div.footer-option-box div {
