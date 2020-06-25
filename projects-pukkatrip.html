@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Adriana Garzon P. | UX Designer</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Adriana Garzon P. UX Portfolio">
-  <meta name="author" content="Adriana Garzon P.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/global_styles.css">
-  <link rel="stylesheet" type="text/css" href="css/pukkatrip_styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Scope+One&display=swap" rel="stylesheet">
+    <title>Adriana Garzon P. | UX Designer</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Adriana Garzon P. UX Portfolio">
+    <meta name="author" content="Adriana Garzon P.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/global_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/pukkatrip_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Scope+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -45,6 +47,9 @@
 <!--HEADER ENDS-->  
 <!--MAIN STARTS-->
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="material-icons md-48">arrow_circle_up</i>
+        </button>
         <section class="project-overview">
             <div>
                 <h2>Project overview</h2>
@@ -246,7 +251,7 @@
                 </div>
             </div>-->
             <img src="images/pukka_trip/pukka-persona.png" alt="user persona with pictures, bio, goals, traveling habits, tech use and frustrations" class="persona grey-box">
-            <p class="p-gb p-gb-above">To further determine the scope of the problem, I created a user scenario that added specific constraints to the persona’s situation and goals. This scenario was part of a larger client journey map that identified feelings, pain points, opportunities. <span><a href="http://" class="in-text-link">The full client journey map can download here.</a></span></p>
+            <p class="p-gb p-gb-above">To further determine the scope of the problem, I created a user scenario that added specific constraints to the persona’s situation and goals. This scenario was part of a larger client journey map that identified feelings, pain points, opportunities. <span><a href="PukkaTrip_Journey_Map.pdf"  target="_blank" rel="noopener noreferrer" class="in-text-link">The full client journey map can download here.</a></span></p>
             <div class="grey-box two-sides-text">
                 <div class="side-60">
                     <h3 class="h3-gbox">Scenario</h3>
@@ -404,34 +409,34 @@
                 <li>An early introduction to facets: poll responses from travelers and locals, tips from locals, and categories of information available within those</li>
                 <li>Consistent and predictable UI patterns</li>
             </ul>
-            <h3 class="extra-space">Wireframes</h3>
+            <h3 class="extra-space">Sketches</h3>
             <div class="double-grey-box-container">
                 <div class="left-grey-box">
                     <div class="img-text">
-                        <img src="images/pukka_trip/paper-wireframes/search-screen.jpg" alt="sketch of wireframe" class="wire-img-one" id="margin-wire-img-one">
+                        <img src="images/pukka_trip/paper-wireframes/search-screen.jpg" alt="Sketch of search layout" class="wire-img-one" id="margin-wire-img-one">
                         <p class="text-70">The first screen conveys the purpose of the app and allows the user to search for the information he needs right away by entering his destination.</p>
                     </div>
                     <div class="img-text">
-                        <img src="images/pukka_trip/paper-wireframes/search-results.jpg" alt="2 sketches of wireframes" class="wire-img-two">
+                        <img src="images/pukka_trip/paper-wireframes/search-results.jpg" alt="Sketches of search results and filters" class="wire-img-two">
                         <p class="text-70">Categories of information are introduced early and reinforced with descriptive words and icons.</p>
                     </div>
                     <div class="img-text">
-                        <img src="images/pukka_trip/paper-wireframes/account-privacy.jpg" alt="3 sketches of wireframes" class="wire-img-two">
+                        <img src="images/pukka_trip/paper-wireframes/account-privacy.jpg" alt="Sketches of sign up screen and location permissions screen" class="wire-img-two">
                         <p class="text-70">Creating an account is only needed after valuable information has been shown to the user when he decides to submit a poll and to facilitate response tracking. The app respects user privacy and gives an alternative to location tracking.</p>
                     </div>
                 </div>
                 <div class="right-grey-box">
                     <div class="img-text">
-                        <img src="images/pukka_trip/paper-wireframes/trip-poll.jpg" alt="2 sketch of wireframes" class="wire-img-two">
+                        <img src="images/pukka_trip/paper-wireframes/trip-poll.jpg" alt="Sketches of create a trip and send poll screens" class="wire-img-two">
                         <p class="text-70">The app allows creating a trip and associate tips and recommendations to it to increase convenience for users who are planners and appreciate organization.</p>
                     </div>
                     <div class="img-text">
-                        <img src="images/pukka_trip/paper-wireframes/reply-poll.jpg" alt="2 sketches of wireframes" class="wire-img-two">
+                        <img src="images/pukka_trip/paper-wireframes/reply-poll.jpg" alt="Sketches of request to reply to poll and poll reply screens" class="wire-img-two">
                         <p class="text-70">The app encourages users to support other travelers by replying to their polls without forcing them to do so.</p>
                     </div>
                     <div class="img-text">
-                        <img src="images/pukka_trip/paper-wireframes/profile-responses.jpg" alt="3 sketches of wireframes" class="wire-img-two">
-                        <p class="text-70">Placeholder</p>
+                        <img src="images/pukka_trip/paper-wireframes/profile-responses.jpg" alt="Sketches of account and poll screens" class="wire-img-two">
+                        <p class="text-70">The account/profile screen has a simple interface that shows the user how to interact with the app. Here users will be able to see created trips and polls as well as responses sent and received.</p>
                     </div>
                 </div>
             </div>
@@ -465,40 +470,39 @@
                 <img src="images/methodology/protyping.png" alt="Icon with word Prototyping" class="met-img-206">
                 <h2>Iterating based on users’ feedback</h2 class="h2-h3">
             </div>
-            <h3 class="h2-h3">Hi-fi wireframes</h3 class="h2-h3">
+            <h3 class="h2-h3">Wireframes</h3 class="h2-h3">
             <p class="p-gb">Incorporating the feedback received in round one of usability testing, I worked on Figma to design hi-fi wireframes and a prototype.</p>
             <div class="double-grey-box-container">
                 <div class="left-grey-box">     
                     <div class="img-text-hor">
                         <div class="hi-fi-img-box">
-                            <img src="images/pukka_trip/hi-fi-v.1/search.jpg" alt="" class="wire-img-one">
-                            <img src="images/pukka_trip/hi-fi-v.1/search entry select.jpg" alt="" class="wire-img-one">
-                            <img src="images/pukka_trip/hi-fi-v.1/location permissions.jpg" alt="" class="wire-img-one">
+                            <img src="images/pukka_trip/hi-fi-v.1/search.jpg" alt="PukkaTrip search screen" class="wire-img-one">
+                            <img src="images/pukka_trip/hi-fi-v.1/search entry select.jpg" alt="PukkaTrip search screen showing auto-complete" class="wire-img-one">
                         </div>
-                        <p class="p-gb extra-space">Placeholder</p>
+                        <p class="p-gb">The first screen encountered by the user has a simple and unequivocal call to action that reveals the value proposition of PukkaTrip: search a destination and find authentic local experiences. All while incorporating an auto-complete search functionality.</p>
                     </div>
                     <div class="img-text-hor">
                         <div class="hi-fi-img-box">
-                            <img src="images/pukka_trip/hi-fi-v.1/search results.jpg" alt="" class="wire-img-one">
-                            <img src="images/pukka_trip/hi-fi-v.1/search results poll.jpg" alt="" class="wire-img-one">
+                            <img src="images/pukka_trip/hi-fi-v.1/search results.jpg" alt="PukkaTrip search results screen with more filters expanded" class="wire-img-one">
+                            <img src="images/pukka_trip/hi-fi-v.1/search results poll.jpg" alt="PukkaTrip search results screen with more filters expanded and submit a poll pop-up" class="wire-img-one">
                         </div>
-                        <p class="p-gb extra-space">Placeholder</p class="p-gb">
+                        <p class="p-gb">Search results allow users to discover information facets by displaying icons with labels. Users can customize results by tapping "More filters" and selecting relevant filters. A pop-up message appears at the bottom of the screen to invite users to submit a poll question for personalized information.</p>
                     </div>
                 </div>
                 <div class="right-grey-box">
                     <div class="img-text-hor">
-                        <div class="hi-fi-img-box">
-                            <img src="images/pukka_trip/hi-fi-v.1/reply to poll blank.jpg" alt="" class="wire-img-one">
-                            <img src="images/pukka_trip/hi-fi-v.1/reply to poll entry.jpg" alt="" class="wire-img-one">
+                        <div class="hi-fi-img-box extra-space-b4">
+                            <img src="images/pukka_trip/hi-fi-v.1/reply to poll blank.jpg" alt="PukkaTrip send a poll invitation screen" class="wire-img-one">
+                            <img src="images/pukka_trip/hi-fi-v.1/reply to poll entry.jpg" alt="PukkaTrip send a poll screen" class="wire-img-one">
                         </div>
-                        <p class="p-gb extra-space">Placeholder</p class="p-gb">
+                        <p class="p-gb extra-space">Users are encouraged to reply to another user's poll after sending theirs. Responding is made simple and can be completed on the same screen. Users have the option to change the poll question or to complete this step later.</p>
                     </div>
                     <div class="img-text-hor">
-                        <div class="hi-fi-img-box">
-                            <img src="images/pukka_trip/hi-fi-v.1/account.jpg" alt="" class="wire-img-one">
-                            <img src="images/pukka_trip/hi-fi-v.1/polls home.jpg" alt="" class="wire-img-one">
+                        <div class="hi-fi-img-box extra-space-b4">
+                            <img src="images/pukka_trip/hi-fi-v.1/account.jpg" alt="PukkaTrip account screen with poll notifications badge" class="wire-img-one">
+                            <img src="images/pukka_trip/hi-fi-v.1/polls home.jpg" alt="PukkaTrip poll screens filtered by received responses" class="wire-img-one">
                         </div>
-                        <p class="p-gb extra-space">Placeholder</p class="p-gb">
+                        <p class="p-gb">Users can see their account, which shows gives them access to trips created, searching for new destinations, and sent poll questions and responses. A notification icon shows poll responses received. Users see responses received to each poll question and can save relevant ones to the same or a new trip for easy access.</p>
                     </div>
                 </div>
             </div>
@@ -707,7 +711,7 @@
           </a>
         </li>
         <li class="footer-item">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="AdrianaGarzonPortela-Resume.pdf" target="_blank" rel="noopener noreferrer">
             <div class="footer-option-box">
               <div class="icon-circle footer-hover"><img class="doc" src="images/blank_page.png" alt="Image of a blank document page"></div>
               <p>Download<br>my Resume</p>
@@ -722,5 +726,7 @@
   </footer>
 <!--FOOTER ENDS-->
 </body>
+
+<script src="js/back-to-top-button.js"></script>
 
 </html>

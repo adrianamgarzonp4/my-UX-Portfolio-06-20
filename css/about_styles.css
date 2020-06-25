@@ -8,6 +8,16 @@ header {
 }
 
 /*MAIN*/
+
+#download-link {
+    text-decoration: none;
+    color: var(--blue, #3a4fab);
+}
+
+#download-link:hover {
+    color: var(--dark-grey, #404040);
+}
+
 .photo-container {
     margin-bottom: 24px;
 }

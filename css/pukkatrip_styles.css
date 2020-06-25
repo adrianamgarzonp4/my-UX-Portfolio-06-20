@@ -367,6 +367,10 @@ p.extra-space {
     margin-bottom: 4rem;
 }
 
+div.extra-space-b4 {
+    margin-top: 2rem;    
+}
+
 h3.extra-space, li.extra-space {
     margin-bottom: 2rem;
 }
@@ -494,7 +498,7 @@ section.card:hover {
     box-shadow: 0 6px 12px rgba(0,0,0,0.50);
 }
 
-/*MAIN - DECORATION*/
+/*CARDS - DECORATION*/
 .right-decor {
     width: 17%;
     display: grid;
@@ -538,3 +542,26 @@ section.card:hover {
     right: auto;
     z-index: 3;   
 }
+
+/*BACK-TO-TOP BUTTON*/
+.material-icons.md-48 {
+    font-size: 48px; /* Increase font size */
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    color: var(--blue, #3a4fab); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+  }
+  
+  .material-icons.md-48:hover {
+    background-color: var(--yellow, #f1e72f); /* Add a dark-grey background on hover */
+    border-radius: 50%; /* Rounded corners */
+  }
