@@ -14,7 +14,7 @@ header {
 }
 
 .hero-image {
-    background-image: url("/Users/adri/Documents/GitHub/my-UX-Portfolio-06-20/images/pukka_trip/bg.jpg"); /* The image used */
+    background-image: url("../images/pukka_trip/bg.jpg"); /* The image used */
     background-color: rgba(15, 184, 180, 60%); /* Used if the image is unavailable*/
     height: 800px; /* You must set a specified height */
     background-position: right;
@@ -80,10 +80,17 @@ img.met-img {
     margin-right: 24px;
 }
 
+img.met-img-206 {
+    width: 135px;
+    height: 103px;
+    margin-right: 24px;
+}
+
 section > div.sec-title > h2 {
     width: 100%;
 }
 
+/*MAIN - SECTION STYLES*/
 .grey-box {
     background-color: var(--light-grey, #efefef);
     margin-left: -20%;
@@ -331,10 +338,7 @@ div.comp-screens {
 .comp-img {
     width: 40%;
     height: auto;
-}
-
-#ideate {
-    height: 103px;
+    margin-bottom: 10px;
 }
 
 #ide-box {
@@ -363,6 +367,10 @@ p.extra-space {
     margin-bottom: 4rem;
 }
 
+h3.extra-space, li.extra-space {
+    margin-bottom: 2rem;
+}
+
 .edge-to-edge-img {
     display: block;
     margin-left: -40%;
@@ -374,6 +382,7 @@ p.extra-space {
 .img-text {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 15px;
 }
 
 .wire-img-two {
@@ -386,6 +395,146 @@ p.extra-space {
     height: auto;
 }
 
+#margin-wire-img-one {
+    margin-left: 20%;
+}
+
 .text-70 {
     width: 55%;
+}
+
+.two-column-box {
+    display: flex;
+}
+
+.column-1, .column-2 {
+    width: 50%;
+}
+
+.img-text-hor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hi-fi-img-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p.text-centered {
+    text-align: center;
+}
+
+/*CARDS*/
+.card-sec {
+    background: linear-gradient(var(--white, #ffffff), var(--light-grey, #efefef), var(--white, #ffffff));
+    position: relative;
+}
+
+.a-card {
+    text-decoration: none;
+}
+
+h2.title {
+    font-size: 2.52rem;
+    width: 55%;
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 48px;
+}
+
+p.card, h3.card {
+    color: var(--white, #ffffff);
+    padding-left: 7%;
+    width: 50%;
+    z-index: -1;
+}
+
+h3.card {
+    padding-top: 4%;
+}
+
+p.card {
+    padding-bottom: 3%;
+}
+
+section.card {
+    background-color: var(--blue, #3a4fab);
+    position: relative;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 64px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-img {
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    max-width: 50%;
+    height: auto;
+    z-index: 1;
+}
+
+.button-container {
+    background-color: var(--white, #ffffff);
+    width: 100%;
+    position: relative;
+}
+
+a.card {
+    text-decoration: none;
+    position: relative;
+    left: -310px;
+}
+
+section.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.50);
+}
+
+/*MAIN - DECORATION*/
+.right-decor {
+    width: 17%;
+    display: grid;
+    grid-template-areas:
+        '. . . . c1'
+        '. c3 c4 . c5'
+        'c6 c7 . c8 .'
+        'c9 . c10 c2 c11'
+        '. . . . c12';
+}
+
+.rdc2 { grid-area: c2}
+.rdc3 { grid-area: c3}
+.rdc4 { grid-area: c4}
+.rdc5 { grid-area: c5}
+.rdc6 { grid-area: c6}
+.rdc7 { grid-area: c7}
+.rdc8 { grid-area: c8}
+.rdc9 { grid-area: c9}
+.rdc10 { grid-area: c10}
+.rdc11 { grid-area: c11}
+.rdc12 { grid-area: c12}
+
+.decoration1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.decoration2 {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    z-index: 3;
+}
+
+.decoration3 {
+    position: absolute;
+    bottom: 0px;
+    right: auto;
+    z-index: 3;   
 }
