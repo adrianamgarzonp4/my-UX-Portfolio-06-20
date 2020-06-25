@@ -64,7 +64,7 @@ h3 {
 
 /*MAIN - SECT-TITLE*/
 a.in-text-link {
-    color: var(--dark-grey, #404040);
+    color: var(--blue, #3a4fab);
 }
 
 .sec-title {
@@ -228,7 +228,7 @@ div.emp-map {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-image: url("/Users/adri/Documents/GitHub/my-UX-Portfolio-06-20/images/pukka_trip/empathy-bg.jpg"); 
+    background-image: url("../images/pukka_trip/empathy-bg.jpg"); 
     background-color: var(--light-grey, #efefef); /* Used if the image is unavailable*/
     /*height: 800px; /* You must set a specified height */
     background-position: center;
