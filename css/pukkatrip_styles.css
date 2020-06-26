@@ -409,10 +409,11 @@ h3.extra-space, li.extra-space {
 
 .two-column-box {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .column-1, .column-2 {
-    width: 50%;
+    width: 45%;
 }
 
 .img-text-hor {
