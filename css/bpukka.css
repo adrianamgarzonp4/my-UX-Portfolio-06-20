@@ -61,86 +61,112 @@ div.extra-padding {
     padding-left: 3rem;
 }
 
+.padding15 {
+    padding-right: 15px;
+    padding-left: 15px;   
+}
+
 /***Jumbotron starts***/
 .jumbotron {
-    background-image: url("../images/pukka_trip/bg.jpg"); /* The image used */
-    background-color: rgba(15, 184, 180, 60%); /* Used if the image is unavailable*/
-    /*height: 800px; /* You must set a specified height */
-    background-position: center;
+    background-image: url("../images/pukka_trip/bg.jpg"); /*The image used*/
+    background-color: rgba(15, 184, 180, 60%); /* Used if the image is unavailable */
+    height: 600px; /*You must set a specified height */
+    background-position: 50% 80%;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /*Resize the background image to cover the entire container */
-    margin-top: -100px;
     margin-bottom: 0px;
-    /* padding-top: 30%; */
 }
-
 .jum-1 {
     color: var(--blue, #3a4fab);
-    padding-top: 30%;
-    padding-bottom: 24px;
-    text-shadow: 1px 1px 6px #ffffff;  
+    text-shadow: 1px 1px 6px #efefef;
+    text-shadow: 2px 2px 4px #534f4f4c; 
+    padding-top: 15%;
+    padding-bottom: 8px;
+    font-size: 3rem; 
+    font-weight: bolder;
 }
-
 .jum-2 {
-    padding-bottom: 24px;
+    padding-bottom: 8px;
     font-weight: bolder;
-    font-size: 2.52rem;
-    text-shadow: 2px 2px 6px #ffffff; 
+    font-size: 2rem;
+    color: var(--blue, #3a4fab);
+    text-shadow: 1px 1px 6px #efefef;
+    text-shadow: 2px 2px 4px #534f4f4c; 
 }
-
 .jum-3 {
-    color: var(--black, #000000);
+    color: var(--white, #ffffff);
     font-weight: bolder;
-    font-size: 1.361rem;
-    text-shadow: 1px 1px 6px #ffffff; 
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 4px #000000; 
+    text-shadow: 2px 2px 6px #000000;
 }
-
-@media (min-width: 991px) {
+/********* Media queries for jumbotron only **/
+@media (min-width: 576px) and (max-width: 767.98px) { /* Small and medium devices */
     .jumbotron {
-        height: 900px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* padding-top: 0px; */
-    }
-}
-
-@media (max-width: 500px) { 
-    .jumbotron {
-        background-repeat: no-repeat; 
-        background-size: cover;
-        background-position: center;
-        margin-top: -90px;
+        height: 900px; /* You must set a specified height */
+        background-position:  50% 80%;
+        margin-top: -100px;
+        margin-bottom: 0px;
         /* padding-top: 30%; */
     }
     .jum-1 {
-        font-size: 4rem;
-        /* padding-top: 64px; */
-        padding-bottom: 8px;
+        color: var(--blue, #3a4fab);
+        padding-top: 30%;
+        padding-bottom: 12px;
+        text-shadow: 1px 1px 6px #efefef;
+        text-shadow: 2px 2px 4px #534f4f4c; 
     }
     .jum-2 {
-        color: var(--white, #ffffff);
-        font-size: 1.852rem; 
-        text-shadow: 1px 1px 6px #000000;    
-        padding-bottom: 8px;  
+        padding-bottom: 12px;
+        font-weight: bolder;
+        font-size: 2.52rem;
+        text-shadow: 1px 1px 6px #efefef;
+        text-shadow: 2px 2px 4px #534f4f4c; 
     }
     .jum-3 {
-        color: var(--white, #ffffff);
-        text-shadow: 1px 1px 4px #000000;
+        font-size: 1.361rem;
     }
 }
-@media (max-width: 991px) {
+@media (min-width: 992px) { /* large devices */
+    .jumbotron {
+        height: 900px; /* You must set a specified height */
+        background-position: center;
+        margin-top: -100px;
+    }
+    .jum-1 {
+        color: var(--blue, #3a4fab);
+        padding-top: 30%;
+        padding-bottom: 24px;
+    }
+    .jum-2 {
+        padding-bottom: 24px;
+        font-weight: bolder;
+        font-size: 2.52rem;
+    }
     .jum-3 {
-        color: var(--white, #ffffff);
-        text-shadow: 1px 1px 4px #000000;
+        color: var(--black, #000000);
+        font-weight: bolder;
+        font-size: 1.361rem;
+        text-shadow: 1px 1px 6px #efefef;
+        text-shadow: 2px 2px 4px #534f4f4c;  
     }
 }
 /**Jumbotorn ends**/
 
-/**Secondary navigation starts**/
+/****//***/
+/****//***/
+/****//***/
+/*********** ****** ****** ******* Secondary navigation starts**/
 .sidebar {
     background-color: var(--light-grey, #efefef);
+    padding-left: 1.5rem;
+    padding-top: 1rem;
 }
 /**Secondary navigation ends**/
+/****//***/
+/****//***/
+/****//***/
 
 /**Main starts**/
 a.in-text-link {
@@ -179,45 +205,37 @@ p.legend {
     margin-block-start: 0rem;
     color: var(--blue, #3a4fab);
 }
-
 p.p-gb, p.p-gb-above {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
 .met-img {
     max-height: 130px; 
     max-width: 136px;
     margin-bottom: 0.3rem;
 }
-
 .row.sec-title {
     margin-top: 6rem;
     margin-bottom: 2rem;
 }
-
 p.big-number {
     font: bolder 1.852rem 'Scope One', serif; /*font-style font-variant font-weight font-size/line-height font-family*/
     color: var(--blue,#3a4fab);
     /* padding-right: 1.5rem; */
 }
-
 .number-text {
     margin-right: 0px;
     margin-left: 0px;
     margin-top: 1rem;
 }
-
 .percentage-text {
     margin-right: 0px;
     margin-left: 0px;
 }
-
 p.stat {
     margin-bottom: 0px;
     margin-right: 1.5rem;
 }
-
 .trip-planning {
     display: grid;
     grid-template-columns: 1.5fr 0.8fr 0.1fr;
@@ -228,7 +246,6 @@ p.stat {
     margin-right: 0px;
     margin-left: 0px;
 }
-
 .tp-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -262,23 +279,19 @@ p.stat {
     background-color:  rgba(15, 184, 180, 20%);
     font-size: 0.5rem;
 }
-
 .tp-1, .tp-2, .tp-3, .tp-4, .tp-5, .tp-6 {
     border: solid 0.5px var(--white, #ffffff);
     padding-left: 4px;
     padding-top: 4px;
 }
-
 .chart {
     margin-right: 0px;
     margin-left: 0px;
 }
-
 div.emp-map { /*empathy map*/
     background-color: var(--light-grey, #efefef); /* Used if the image is unavailable*/
     padding: 36px;
 }
-
 .em-box {
     background-color: rgba(15, 184, 180, 40%);
     padding-left: 24px;
@@ -291,49 +304,39 @@ div.emp-map { /*empathy map*/
     font-size: 0.8rem;
     margin-top: 1rem;
 }
-
 .emp-map-h4 {
     margin-block-start: 0.5rem;
     margin-block-end: 0.5rem;
     font-weight: 600;
 }
-
 .text-columns {
     justify-content: space-between;
 } 
-
 .comp-img {
     margin-bottom: 16px;
 }
-
 .comp-screens {
     justify-content: space-between;
     align-content: space-between;
     margin-top: 0px; /*has to be 0 for medium and small devices*/
     margin-bottom: 16px;
 }
-
 .h4-gb {
     margin-bottom: 24px;
 }
-
 hr {
     border: solid 1px #4040407a;
     width: 70%;
 }
-
 .ide-img {
     padding-bottom: 24px;
 }
-
 .per-sce-goal {
     padding-left: 24px;
 }
-
 p.text-centered {
     text-align: center;
 }
-
 #legend-matrix {
     margin-bottom: 4rem;
 }
@@ -349,7 +352,6 @@ p.text-centered {
     #emp-bg-img {
         display: none;    
     }
-
     div.emp-map { 
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -428,6 +430,9 @@ p.text-centered {
         width: 40%;
         margin: auto;
         margin-bottom: 16px;
+    }
+    .sidebar {
+        display: none;
     }
 }
 

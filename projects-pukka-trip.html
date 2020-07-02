@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/global_styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/global_styles.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/pukkatrip_styles.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/bpukka.css">
+    <link rel="stylesheet" type="text/css" href="./css/bpukka.css">
+    <link rel="stylesheet" type="text/css" href="./css/mycards.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Scope+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -19,7 +20,7 @@
 <body>
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <div class="yellowCircle"><img src="images/ag.png" width="48" alt="Initials AG for Adriana Garzon's logo" loading="lazy"></div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerOptions" aria-controls="navbarTogglerOptions" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,13 +30,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerOptions">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                    <a class="nav-link" href="#"><div class="yellowCircle"><span id="ajustAbout">about</span><span class="sr-only">(current)</span></div></a>
+                    <a class="nav-link" href="#"><div class="yellowCircle"><span id="adjustProjects">projects</span><span class="sr-only">(current)</span></div></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#"><div class="yellowCircle"><span id="adjustProjects">projects</span></div></a>
+                    <a class="nav-link" href="#"><div class="yellowCircle"><span id="adjustAbout">about</span></div></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#"><div class="yellowCircle">home</div></a>
+                    <a class="nav-link" href="index.html"><div class="yellowCircle">home</div></a>
                     </li>
                 </ul>
             </div>
@@ -52,73 +53,15 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <i class="material-icons md-48">arrow_circle_up</i>
     </button>
-
-    <div class="container-fluid">
-        <div class="row flex-xl-nowrap"  id="side-nav">
-            <nav class="col-md-2 col-xl-2 sidebar collapse">
-                <!-- <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/user_research.png" alt="User research">
-                        </a>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/research_ddata_analysis.png" alt="Research data analysis">
-                        </a>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/persona_creation.png" alt="Persona creation">
-                        </a>
-                    </div>                   
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/competitive_analysis.png" alt="Competitive analysis">
-                        </a>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/hmw.png" alt="How might we definition">
-                        </a>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/ideation.png" alt="Ideation 1">
-                        </a>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/protyping.png" alt="Prototyping 1">
-                        </a>
-                    </div>                   
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/usabiliy_testing.png" alt="Usability testing 1">
-                        </a>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/ideation.png" alt="Ideation 2">
-                        </a>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/protyping.png" alt="Prototyping 2">
-                        </a>
-                    </div>                   
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/usabiliy_testing.png" alt="Usability testing 2">
-                        </a>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            <img src="images/methodology/protyping.png" alt="Prototyping 3">
-                        </a>
-                    </div>                   
-                </nav> -->
-                <div class="sticky-top">
+    <!-- 
+        + make video
+        + style side bar
+        + figure out how to make bar sticky
+        + complete story board-->
+    <div class="row d-xl-flex flex-xl-row">
+        <div class="row flex-xl-nowrap col-lg-2 col-xl-2"  id="side-nav">
+            <nav class="col-lg-12 col-xl-12 sidebar">
+                <div class="">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Project Overview</a>
@@ -163,626 +106,751 @@
                 </div>
             </nav>
         </div>
-        
-        <main class="container-fluid">              
-            <section class="project-overview">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <h2>Project overview</h2>
-                    <h3 class="h2-h3-po">Summary</h3>
-                    <p>Through qualitative and quantitative user research, I discovered that travelers have a difficult time finding information about local experiences available at their desired destinations. This reality causes them to miss authentic experiences and to waste time and money once they are at their destination.</p>
-                    <p>PukkaTrip is a travel app prototype designed to alleviate the described pain point by helping travelers discover authentic local experiences.</p>
-                    <a href="http://" class="in-text-link">Take a look at this case study storyboard here.</a>
-                    <h3>Project Goals</h3>
-                    <ul>
-                        <li>Uncover travelers’ pain points in their trip planning process (when traveling for vacation)</li>
-                        <li>Implement a user-centered design methodology to prototype a mobile travel app that addresses those pain points</li>
-                    </ul>
-                    <h3>My Role & Responsibilities</h3>
-                    <p>Sole UX and UI designer</p>
-                    <h3>Timeline </h3>
-                    <p>4 weeks</p>
-                    <h3>Tools</h3>
-                    <p>Pen & paper, Figma, Photoshop, Illustrator, Adobe XD, Miro & Procreate</p>
-                    <h3>Methodology</h3>
-                    <p class="p-gb">I approached this problem from a place of curiosity. That curiosity turned into empathy as I interviewed users. Once I understood their main pain points, I narrowed the scope of the problem by defining a user persona and scenario. As a next step, I ideated potential solutions, prioritized, designed, and tested the user flow and visual design a couple of times. Based on the user feedback, I revised my wireframes and prototyped a minimum valuable product that addressed the users' pain points and stood out from the competition.</p>
-                </div>  
-                <div class="row grey-box">
-                    <img src="images/pukka_trip/methodology.png" class="img-fluid" alt="User Research, Research Data Analysis, Persona Creation, Competitive Analysis, How Might We Statement, Ideation, Prototyping, Usability Testing" class="method">
-                    <p class="legend">Steps and artifacts that supported my approach to solving this problem</p>
-                </div>
-            </section>
-            <section class="user-research">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/user_research.png" alt="Icon of person and magnifying glass with words user research" class="img-fluid met-img">
+
+        <div class="container-fluid col-lg-10 col-xl-10 padding15">              
+            <main class="container-fluid col-lg-12 col-xl-12">              
+                <section class="project-overview">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <h2>Project overview</h2>
+                        <h3 class="h2-h3-po">Summary</h3>
+                        <p>Through qualitative and quantitative user research, I discovered that travelers have a difficult time finding information about local experiences available at their desired destinations. This reality causes them to miss authentic experiences and to waste time and money once they are at their destination.</p>
+                        <p>PukkaTrip is a travel app prototype designed to alleviate the described pain point by helping travelers discover authentic local experiences.</p>
+                        <a href="http://" class="in-text-link">Take a look at this case study storyboard here.</a>
+                        <h3>Project Goals</h3>
+                        <ul>
+                            <li>Uncover travelers’ pain points in their trip planning process (when traveling for vacation)</li>
+                            <li>Implement a user-centered design methodology to prototype a mobile travel app that addresses those pain points</li>
+                        </ul>
+                        <h3>My Role & Responsibilities</h3>
+                        <p>Sole UX and UI designer</p>
+                        <h3>Timeline </h3>
+                        <p>4 weeks</p>
+                        <h3>Tools</h3>
+                        <p>Pen & paper, Figma, Photoshop, Illustrator, Adobe XD, Miro & Procreate</p>
+                        <h3>Methodology</h3>
+                        <p class="p-gb">I approached this problem from a place of curiosity. That curiosity turned into empathy as I interviewed users. Once I understood their main pain points, I narrowed the scope of the problem by defining a user persona and scenario. As a next step, I ideated potential solutions, prioritized, designed, and tested the user flow and visual design a couple of times. Based on the user feedback, I revised my wireframes and prototyped a minimum valuable product that addressed the users' pain points and stood out from the competition.</p>
+                    </div>  
+                    <div class="row grey-box">
+                        <img src="images/pukka_trip/methodology.png" class="img-fluid" alt="User Research, Research Data Analysis, Persona Creation, Competitive Analysis, How Might We Statement, Ideation, Prototyping, Usability Testing" class="method">
+                        <p class="legend">Steps and artifacts that supported my approach to solving this problem</p>
+                    </div>
+                </section>
+                <section class="user-research">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/user_research.png" alt="Icon of person and magnifying glass with words user research" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Creating an understanding of the scope of the problem and getting to know the users</h2>
                             </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Creating an understanding of the scope of the problem and getting to know the users</h2>
                         </div>
-                    </div>
-                    <p>To learn more about how travelers plan their trips, I performed 5 interviews and 23 surveys.</p>
-                    <h3>Questions asked</h3>
-                    <ul>
-                        <li>When traveling for vacation, what are some of the reasons why you do it?</li>
-                        <li>How do you go about planning a trip?</li>
-                        <li>What is the most time-consuming part about planning a vacation trip?</li>
-                        <li>What are the most time-consuming activities at your destination?</li>
-                    </ul>
-                    <h3>Main findings from qualitative and quantitative research</h3>
-                    <div class="row number-text">
-                        <p class="big-number col-xs-1 col-sm-1 col-md-1 col-lg-1">1</p>
-                        <p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">Users’motivation for traveling is to experience something different and unique. They want to experience genuine local experiences at their destination.</p>
-                    </div>
-                </div>
-                <div class="row d-flex flex-column grey-box extra-padding">
-                    <p class="text-highlight">“I like to see and experience something different when I travel... I try to get in contact with local traditions instead of doing something that has been fabricated for tourists. Also, I like to eat local food, visit unfrequented places, and spend little time at hotels.”</p>
-                    <hr>
-                    <div>
-                        <h3>Survey respondents agree or strongly agree:</h3>
-                        <div class="row percentage-text">
-                            <p class="big-number stat">91% </p>
-                            <p>I travel, I like to go beyond the ultimate touristy places</p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-                        </div>
-                        <div class="row percentage-text">
-                            <p class="big-number stat">83%</p>
-                            <p>When I visit a new destination, I want to go where the locals go</p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="row number-text">
-                        <p class="big-number col-xs-1 col-sm-1 col-md-1 col-lg-1">2</p>
-                        <p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">During their planning phase, users lack enough information from local sources about where to eat and what to do.</p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-                    </div>
-                    <div class="row number-text">
-                        <p class="big-number col-xs-1 col-sm-1 col-md-1 col-lg-1">3</p>
-                        <p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">Users plan their trips well in advance and spend most of their time deciding what activities to do.</p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-                    </div>
-                </div>
-                <div class="row grey-box">
-                    <div class="row time-planning chart col-xl-5">
-                        <img src="images/pukka_trip/trip-planning-time.png" alt="Pie chart: 39%:1-3 months, 36%:3-6 months, 13%: 6 or more months, 9%: Less than 1 month, 4%: No response" class="img-fluid pie-pukka">
-                        <p class="legend col-12">How far in advance do people plan their trips</p>
-                    </div>
-                    <div class="row chart col-xl-7">
-                        <div class="col-12 trip-planning">
-                            <div class="tp-1">Defining<br>activities</div>
-                            <div class="tp-2">Ticket<br>purchase</div>
-                            <div class="tp-3">Booking<br>accommodations</div>
-                            <div class="tp-4">Cost-<br>comparing</div>
-                            <div class="tp-5">Double-<br>checking</div>
-                            <div class="tp-6">Packing</div>
-                        </div>
-                        <p class="legend col-12">Most time-consuming trip planning activities</p>
-                    </div>
-                </div>
-            </section>
-            <section class="data-analysis">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/research_ddata_analysis.png" alt="Icon of person and magnifying glass with words user research" class="img-fluid met-img">
-                            </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Making sense of the interview and survey data</h2>
-                        </div>
-                    </div>
-                    <h3 class="h2-h3">User insight</h3>
-                    <p>Finding a user insight was my first step to begin defining the problem space and give the user a face and a voice. This user insight summarizes opinions given by multiple people during the user research phase.</p>
-                    <p class="text-highlight full-width">Before and while they travel, travelers need access to information about local activities and authentic food available at their destination to have unique experiences while maximizing their time and budget.</p>
-                    <h3>Empathy Map</h3>
-                    <p class="p-gb">To see how the research findings translate into the way a person behaves, makes decisions, feels, and thinks, I put together an empathy map, which was a helpful step before defining the user persona.</p>
-                </div>
-                <div class="row d-flex flex-column flex-md-row emp-map">
-                    <div class="col-md-12 nopadding" id="emp-bg-img">
-                        <img src="images/pukka_trip/empathy-bg.jpg" alt="Image of a male in his 30's" class="img-fluid">
-                    </div>
-                    <div class="em-box emp-map-1 col-md-5">
-                        <h4 class="emp-map-h4">Says:</h4>
-                        <p>“I travel to explore new places and have unique experiences.”</p>
-                        <p>“When I travel, I like to go beyond the ultimate touristy spots.”</p>
-                        <p>“When I visit a new destination, I want to go where the locals go walking or using public transportation.”</p>
-                    </div>
-                    <div class="em-box emp-map-2 col-md-5">
-                        <h4 class="emp-map-h4">Does:</h4>
+                        <p>To learn more about how travelers plan their trips, I performed 5 interviews and 23 surveys.</p>
+                        <h3>Questions asked</h3>
                         <ul>
-                            <li>Spends several hours researching what non-touristy activities to do</li>
-                            <li>Trust friends, acquaintances, and recommendations from locals about where to stay, what to do, and where to eat; uses reviews as selection tie-breakers</li>
-                            <li>Plans trips far in advance to stay within budget</li>
-                            <li>Prints itinerary information and saves it in phone notes for offline access</li>
+                            <li>When traveling for vacation, what are some of the reasons why you do it?</li>
+                            <li>How do you go about planning a trip?</li>
+                            <li>What is the most time-consuming part about planning a vacation trip?</li>
+                            <li>What are the most time-consuming activities at your destination?</li>
                         </ul>
-                    </div>
-                    <div class="em-box emp-map-3 col-md-5">
-                        <h4 class="emp-map-h4">Thinks:</h4>
-                        <ul>
-                            <li>Where can I can information about what activities to do and where to eat?</li>
-                            <li>Where can I find information regarding public transportation at my destination?</li>
-                            <li>How do I make sure that I stay in safe neighborhoods?</li>
-                        </ul>
-                    </div>
-                    <div class="em-box emp-map-4 col-md-5">
-                        <h4 class="emp-map-h4">Feels:</h4 class="emp-map-h4">
-                        <ul>
-                            <li>Happy researching his destination and talking to locals or people who have been there before </li>
-                            <li>Frustrated and deflated when the information he is looking for is not available online or is only available in other languages</li>
-                            <li>Anxious about not knowing what clothes to bring given the weather and activities that he plans to do when traveling</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="persona-creation">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/persona_creation.png" alt="Icon with words Persona Creation" class="img-fluid met-img">
-                            </div>     
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Defining a user persona based on research</h2>
+                        <h3>Main findings from qualitative and quantitative research</h3>
+                        <div class="row number-text">
+                            <p class="big-number col-xs-1 col-sm-1 col-md-1 col-lg-1">1</p>
+                            <p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">Users’motivation for traveling is to experience something different and unique. They want to experience genuine local experiences at their destination.</p>
                         </div>
                     </div>
-                    <p class="p-gb">With a better understanding of the behavioral and cognitive processes of potential users, I proceeded to create a persona, which was the guiding force of ideation and prototyping.</p>
-                </div>
-                <div class="row grey-box">
-                    <img src="images/pukka_trip/pukka-persona.png" alt="user persona with pictures, bio, goals, traveling habits, tech use and frustrations" class="img-fluid persona">
-                </div>
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <p class="p-gb p-gb-above">To further determine the scope of the problem, I created a user scenario that added specific constraints to the persona’s situation and goals. This scenario was part of a larger client journey map that identified feelings, pain points, opportunities. <span><a href="PukkaTrip_Journey_Map.pdf"  target="_blank" rel="noopener noreferrer" class="in-text-link">The full client journey map can download here.</a></span></p>
-                    </div>
-                </div>
-                <div class="row d-flex flex-column flex-sm-column flex-md-column flex-lg-column flex-xl-row grey-box text-columns extra-padding">
-                    <div class="row flex-lg-column col-xl-7 nopadding per-sce-goal">
-                        <h3 class="h3-gbox">Scenario</h3>
-                        <p>Marco is 34 years old. He is a Civil Engineer and lives in Portland, Oregon. Marco just booked his flight to Lima, Peru. Now, he is planning activities for his trip. Unfortunately, he is having a hard time finding authentic and unique experiences.</p>
-                        <p>He keeps finding the same type of activities in the different travel sites and nearly zero information about locals’ favorite restaurants and breweries.</p>
-                        <p>Marco is feeling deflated and fears ending up visiting all the places that are meant for tourists and miss the uniqueness of Lima.</p>
-                    </div>
-                    <div class="row flex-lg-column col-xl-5 nopadding per-sce-goal">
-                        <h3 class="h3-gbox">Goals</h3>
-                        <ul>
-                            <li>Having authentic and unique experiences while traveling</li>
-                            <li>Maximizing his time and budget choosing the right things to do and places to eat</li>
-                            <li>Staying away from tourist traps and get to discover the essence of a place through authentic food and beer</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="competitive-analysis">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">                
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/competitive_analysis.png" alt="Icon with words Competitive Analysis" class="img-fluid met-img">
-                            </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Gathering information from competitors to find out if others already address the user needs</h2>
-                        </div>
-                    </div>    
-                    <h3 class="h2-h3">Competitive Analysis: </h3 class="h2-h3">
-                    <p>To ideate solutions that would help the user achieve his goals, I performed a competitive analysis to figure out if other products were addressing the user needs and, if so, how they were doing it.</p>
-                    <p>I was able to find a direct and indirect competitor and performed a strengths and weaknesses assessment of their products as they relate to the user’s goals.</p>
-                    <p class="p-gb">Although both competitors have strengths, they are not truly addressing the user pain points.</p>
-                </div>
-                <div class="row d-flex flex-column flex-xl-row">
-                    <div class="d-flex flex-column col-xl-6 grey-box">
+                    <div class="row d-flex flex-column grey-box extra-padding">
+                        <p class="text-highlight">“I like to see and experience something different when I travel... I try to get in contact with local traditions instead of doing something that has been fabricated for tourists. Also, I like to eat local food, visit unfrequented places, and spend little time at hotels.”</p>
+                        <hr>
                         <div>
-                            <h4 class="h4-gb nopadding col-12">Direct competitor:<br>Jetzy - Travel like a local</h4>
-                        </div>  
-                        <div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row">
-                            <div class="d-flex flex-column flex-sm-row flex-md-row flex-row-column flex-xl-column col-sm-12 col-md-6 col-lg-6 col-xl-4 comp-screens nopadding">
-                                <img src="images/pukka_trip/jetzy-chat.jpg" alt="Jetzy post/chat screen" class="comp-img img-fluid">
-                                <img src="images/pukka_trip/jetzy-search.jpg" alt="Jetzy search screen" class="comp-img img-fluid">
+                            <h3>Survey respondents agree or strongly agree:</h3>
+                            <div class="row percentage-text">
+                                <p class="big-number stat">91% </p>
+                                <p>I travel, I like to go beyond the ultimate touristy places</p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
                             </div>
-                            <div class="st-and-we flex-sm-column flex-lg-column flex-xl-column">
-                                <h5>Strengths</h5>
-                                <ul>
-                                    <li>Tagline communicates the value proposition</li>
-                                    <li>Allows direct communication between users</li>
-                                </ul>
-                                <h5>Weaknesses</h5>
-                                <ul>
-                                    <li>Unnecessary entry-point friction</li>
-                                    <li>Inconsistent UI</li>
-                                    <li>The user flow does not lead to finding information to travel like a local</li>
-                                    <li>Does not allow to save relevant information shared by other users</li>
-                                </ul>
+                            <div class="row percentage-text">
+                                <p class="big-number stat">83%</p>
+                                <p>When I visit a new destination, I want to go where the locals go</p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-column col-xl-6 grey-box">
-                        <div>
-                            <h4 class="h4-gb col-12">Indirect Competitor:<br>Forums, Tripadvisor - Read, review, compare prices and book</h4>
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
+                        <div class="row number-text">
+                            <p class="big-number col-xs-1 col-sm-1 col-md-1 col-lg-1">2</p>
+                            <p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">During their planning phase, users lack enough information from local sources about where to eat and what to do.</p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
                         </div>
-                        <div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row">
-                            <div class="d-flex flex-column flex-sm-row flex-md-row flex-row-column flex-xl-column col-sm-12 col-md-6 col-lg-6 col-xl-4 comp-screens nopadding">
-                                <img src="images/pukka_trip/forum-home.jpg" alt="Tripadvisor screen" class="comp-img img-fluid">
-                                <img src="images/pukka_trip/forum-search.jpg" alt="Tripadvisor Forums search screen" class="comp-img img-fluid">
+                        <div class="row number-text">
+                            <p class="big-number col-xs-1 col-sm-1 col-md-1 col-lg-1">3</p>
+                            <p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">Users plan their trips well in advance and spend most of their time deciding what activities to do.</p class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                        </div>
+                    </div>
+                    <div class="row grey-box">
+                        <div class="row time-planning chart col-xl-5">
+                            <img src="images/pukka_trip/trip-planning-time.png" alt="Pie chart: 39%:1-3 months, 36%:3-6 months, 13%: 6 or more months, 9%: Less than 1 month, 4%: No response" class="img-fluid pie-pukka">
+                            <p class="legend col-12">How far in advance do people plan their trips</p>
+                        </div>
+                        <div class="row chart col-xl-7">
+                            <div class="col-12 trip-planning">
+                                <div class="tp-1">Defining<br>activities</div>
+                                <div class="tp-2">Ticket<br>purchase</div>
+                                <div class="tp-3">Booking<br>accommodations</div>
+                                <div class="tp-4">Cost-<br>comparing</div>
+                                <div class="tp-5">Double-<br>checking</div>
+                                <div class="tp-6">Packing</div>
                             </div>
-                            <div class="st-and-we flex-sm-column flex-lg-column flex-xl-column">
-                                <h5>Strengths</h5>
-                                <ul>
-                                    <li>A simple and intuitive interface, conducive to finding authentic information</li>
-                                    <li>Secures authentic information by other users</li>
-                                    <li>Reduces friction at the entry point</li>
-                                </ul>
-                                <h5>Weaknesses</h5>
-                                <ul>
-                                    <li>No way to determine locals’ info vs. travelers’ info and no way to filter by locals’ recommendations</li>
-                                    <li>No way to download information saved for offline use</li>
-                                </ul>
+                            <p class="legend col-12">Most time-consuming trip planning activities</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="data-analysis">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/research_ddata_analysis.png" alt="Icon of person and magnifying glass with words user research" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Making sense of the interview and survey data</h2>
                             </div>
                         </div>
+                        <h3 class="h2-h3">User insight</h3>
+                        <p>Finding a user insight was my first step to begin defining the problem space and give the user a face and a voice. This user insight summarizes opinions given by multiple people during the user research phase.</p>
+                        <p class="text-highlight full-width">Before and while they travel, travelers need access to information about local activities and authentic food available at their destination to have unique experiences while maximizing their time and budget.</p>
+                        <h3>Empathy Map</h3>
+                        <p class="p-gb">To see how the research findings translate into the way a person behaves, makes decisions, feels, and thinks, I put together an empathy map, which was a helpful step before defining the user persona.</p>
                     </div>
-                </div>
-            </section>
-            <section class="how-might-we">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/hmw.png" alt="Icon with words How Might We" class="img-fluid met-img">
-                            </div> 
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">How might we address the user's pain point and help him achieve his goals?</h2>
+                    <div class="row d-flex flex-column flex-md-row emp-map">
+                        <div class="col-md-12 nopadding" id="emp-bg-img">
+                            <img src="images/pukka_trip/empathy-bg.jpg" alt="Image of a male in his 30's" class="img-fluid">
                         </div>
-                    </div>
-                    <p>With a good understanding of the persona, his needs and goals, and the fact that the competitors are not addressing the user needs, I proceeded to define a “How Might We” statement to guide the ideation process.</p>
-                    <p class="text-highlight full-width">How might we help users find authentic information about unique local experiences available at their destinations?</p class="text-highlight">
-                </div>
-            </section>
-            <section class="ideation-1">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">  
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/ideation.png" alt="Icon with words ideation" class="img-fluid met-img">
-                            </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Ideating solutions to solve the user pain points</h2class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                        <div class="em-box emp-map-1 col-md-5">
+                            <h4 class="emp-map-h4">Says:</h4>
+                            <p>“I travel to explore new places and have unique experiences.”</p>
+                            <p>“When I travel, I like to go beyond the ultimate touristy spots.”</p>
+                            <p>“When I visit a new destination, I want to go where the locals go walking or using public transportation.”</p>
                         </div>
-                    </div>
-                    <h3 class="h2-h3">Ideation and Prioritization</h3>
-                    <p>With the persona created in mind, the ideation process begins.</p>
-                    <p>I used the "I like, I wish, What if" method to generate ideas aimed to solve the pain points of this user persona. His goals, habits, must-haves, frustrations, and personality are at the forefront of ideation.</p>
-                    <p class="p-gb">As a next step, I used a prioritization matrix to identify what ideas could potentially become features based on users' satisfaction and their viability/feasibility for PukkaTrip as a company.</p>
-                </div>
-                <div class="row d-flex flex-row grey-box" id="ide-box">
-                    <div class="col-sm-4, col-md-4">
-                        <img src="images/pukka_trip/me_affinity_mapping.jpg" alt="Adriana pointing at post-its on the wall" class="img-fluid ide-img">
-                    </div>
-                    <div class="brainstorm col-sm-8 col-md-8">
-                        <h4>I like...</h4>
-                        <ul>
-                            <li>Having access to my travel info on my phone and offline</li>
-                        </ul>
-                        <h4>I wish...</h4>
-                        <ul>
-                            <li>I could connect with locals when I’m planning my trip</li>
-                            <li>I could always get information that is up to date</li>
-                            <li>I could save and revisit information about local activities that I want to do at my destination</li>
-                        </ul>
-                        <h4>What if...</h4>
-                        <ul>
-                            <li>I could poll locals about their favorite activities, restaurants, and breweries.</li>
-                            <li>Responding to questions other travelers have about the area where I live, would give me some sort of benefit</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <p class="p-gb-above">Prioritization of the features that came out of the ideation phase took a couple of iterations. I focused on features that were key as they directly allow the user to accomplish his goal. By limiting the number of features, I came up with a minimum valuable product.</p>
-                </div>
-                <img src="images/pukka_trip/matrix.jpg" alt="Feature prioritization matrix focused on higher desirability and higher viability" class="img-fluid matrix">
-                <p class="legend" id="legend-matrix">Revised feature prioritization</p>
-                <div class="grey-box two-sides-text extra-space-b4 extra-padding">
-                    <div class="side-40">
-                        <h3 class="h3-gbox">A challenge</h3>
-                        <p>At this point in the ideation process, I realized that integrating a poll feature that allows users to post questions and receive individualized responses would address the user’s pain points and make it stand out from competitors.</p>
-                        <p>However, a poll feature requires users to engage with the app by responding to other travelers’ polls, which makes the functionality sustainable and keeps the information authentic. Answering to other users' questions is a big ask that could deter some potential users from using the app.</p>
-                        <p>To move forward, I took a close look at the user persona and concluded that a poll feature would be well adopted by my user based on the following assumptions.</p>
-                    </div>
-                    <div class="side-60">
-                        <h4>Assumptions</h4>
-                        <ul>
-                            <li>The user is a traveler who plans ahead and enjoys discovering and connecting with others</li>
-                            <li>The user is willing to take extra steps to make sure he gets the information he needs to maximize his travel experience</li>
-                        </ul>
-                        <h4>Important considerations for the adoption of the poll feature</h4>
-                        <ul>
-                            <li>The user will be shown previous poll responses and other users’ contributions before committing to submit a poll</li>
-                            <li>After sending a poll the user will be invited to, not required to, reply to a fellow traveler's poll</li>
-                            <li>Replying to a poll has to be as effortless as possible. Language in the request should be carefully crafted to incentivize its use and boost user’s buy-in</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <h3>User flow diagram</h3>
-                    <p>Once I decided to commit to including a poll feature, I began defining the user flow.</p>
-                    <h4>Goals</h4>
-                    <ul>
-                        <li>Defining a critical path that allowed the user to browse through locals’ and travelers’ recommendations</li>
-                        <li>Allowing the user to submit a poll to get current and individualized answers to his questions and review poll responses</li>
-                        <li>Figuring out a way to keep the community sustainable by encouraging users to provide authentic information to other users</li>
-                        <li>Reducing friction at entry-point<p><em>Note:</em> This user flow incorporates the task of creating an account to submit a poll. Although it can be off-putting for some users, we are assuming that our user does most of his planning on his own and way in advance. Therefore, he is used to creating accounts to manage and keep track of the information he needs for his trip. There will be wording clarifying the convenience of creating an account on the screen.</p></li>
-                    </ul>                
-                </div>
-                <div class="row grey-box">
-                    <img src="images/pukka_trip/critical-path-user-flow.png" alt="Critical path user flow: Launch App, Enter destination, Show search results, Narrow results with filters, Does user want specific information?, if yes, Submit a poll, Does user have an account?, if no, Sign up with Google, Facebook or email, Provide location information?, if yes, Enter location manually, Enter trip name, Write and send poll question, Enable notifications?, if yes or no, Is user willing to respond to a  poll?, Write and send poll response, Go to profile to review sent poll question responses, Save relevant responses to trip" class="img-fluid edge-to-edge-img">
-                </div>
-            </section>
-            <section class="prototyping-1">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/protyping.png" alt="Icon with words prototyping" class="img-fluid met-img">
-                            </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Creating a user interface</h2 class="h2-h3">
-                        </div>
-                    </div>
-                    <h3 class="h2-h3">User interface goals and considerations</h3 class="h2-h3">
-                    <ul>
-                        <li>Have a clear and unequivocal path to getting relevant information about experiences at a potential destination</li>
-                        <li>An early introduction to facets: poll responses from travelers and locals, tips from locals, and categories of information available within those</li>
-                        <li>Consistent and predictable UI patterns</li>
-                    </ul>
-                    <h3 class="extra-space">Sketches</h3>
-                </div>
-                <div class="row d-flex flex-column flex-md-row flex-lg-row flex-xl-row grey-box">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <img src="images/pukka_trip/paper-wireframes/search-screen.jpg" alt="Sketch of search layout" class="extra-space extra-space-b4 img-fluid" id="wire-img-single">
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10">The first screen conveys the purpose of the app and allows the user to search for the information he needs right away by entering his destination.</p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <img src="images/pukka_trip/paper-wireframes/search-results.jpg" alt="Sketches of search results and filters" class="img-fluid extra-space extra-space-b4">
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10">Categories of information are introduced early and reinforced with descriptive words and icons.</p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <img src="images/pukka_trip/paper-wireframes/account-privacy.jpg" alt="Sketches of sign up screen and location permissions screen" class="img-fluid extra-space extra-space-b4">
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10">Creating an account is only needed after valuable information has been shown to the user when he decides to submit a poll and to facilitate response tracking. The app respects user privacy and gives an alternative to location tracking.</p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <img src="images/pukka_trip/paper-wireframes/trip-poll.jpg" alt="Sketches of create a trip and send poll screens" class="extra-space extra-space-b4 img-fluid">
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10">The app allows creating a trip and associate tips and recommendations to it to increase convenience for users who are planners and appreciate organization.</p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <img src="images/pukka_trip/paper-wireframes/reply-poll.jpg" alt="Sketches of request to reply to poll and poll reply screens" class="img-fluid extra-space extra-space-b4">
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10">The app encourages users to support other travelers by replying to their polls without forcing them to do so.</p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <img src="images/pukka_trip/paper-wireframes/profile-responses.jpg" alt="Sketches of account and poll screens" class="img-fluid extra-space extra-space-b4">
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10">The account/profile screen has a simple interface that shows the user how to interact with the app. Here users will be able to see created trips and polls as well as responses sent and received.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="usability-testing-1">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">                    
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/usabiliy_testing.png" alt="" class="img-fluid met-img">
-                            </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">The first round of usability testing</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
-                        </div>
-                    </div>
-                    <p class="p-gb">Before moving on to hi-fi prototyping, I sought feedback on these initial sketches to test the user flow. I got fascinating feedback.</p>
-                </div>
-                <div class="row grey-box extra-padding">
-                    <h3 class="h3-gbox">Usability testing takeaways</h3>
-                    <div class="d-flex flex-column flex-sm-row flex-md-row flex-large-row">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="em-box emp-map-2 col-md-5">
+                            <h4 class="emp-map-h4">Does:</h4>
                             <ul>
-                                <li>Users were excited about the poll feature but thought it was hard to discover</li>
-                                <li>Users felt overwhelmed by the number of filters shown and thought they took too much space on the screen</li>
+                                <li>Spends several hours researching what non-touristy activities to do</li>
+                                <li>Trust friends, acquaintances, and recommendations from locals about where to stay, what to do, and where to eat; uses reviews as selection tie-breakers</li>
+                                <li>Plans trips far in advance to stay within budget</li>
+                                <li>Prints itinerary information and saves it in phone notes for offline access</li>
                             </ul>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 ul-neg-margin">
+                        <div class="em-box emp-map-3 col-md-5">
+                            <h4 class="emp-map-h4">Thinks:</h4>
                             <ul>
-                                <li>Users found that signing up with existent accounts like Google or Facebook was convenient</li>
-                                <li>Users like the prompt to create a trip to organize all information related to their destination</li>
+                                <li>Where can I can information about what activities to do and where to eat?</li>
+                                <li>Where can I find information regarding public transportation at my destination?</li>
+                                <li>How do I make sure that I stay in safe neighborhoods?</li>
+                            </ul>
+                        </div>
+                        <div class="em-box emp-map-4 col-md-5">
+                            <h4 class="emp-map-h4">Feels:</h4 class="emp-map-h4">
+                            <ul>
+                                <li>Happy researching his destination and talking to locals or people who have been there before </li>
+                                <li>Frustrated and deflated when the information he is looking for is not available online or is only available in other languages</li>
+                                <li>Anxious about not knowing what clothes to bring given the weather and activities that he plans to do when traveling</li>
                             </ul>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="prototyping-2">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/protyping.png" alt="Icon with word Prototyping" class="img-fluid met-img">
-                            </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Iterating based on users’ feedback</h2>
-                        </div>
-                    </div>
-                    <h3 class="h2-h3">Wireframes</h3>
-                    <p class="p-gb">Incorporating the feedback received in round one of usability testing, I worked on Figma to design hi-fi wireframes and a prototype.</p>
-                </div>
-                <div class="row d-flex flex-column flex-md-row flex-lg-row flex-xl-row grey-box">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <div class="col-sm-6 col-md-6">
-                                <img src="images/pukka_trip/hi-fi-v.1/search.jpg" alt="PukkaTrip search screen" class="extra-space extra-space-b4 img-fluid">
-                            </div>
-                            <div class="col-sm-6 col-md-6">
-                                <img src="images/pukka_trip/hi-fi-v.1/search entry select.jpg" alt="PukkaTrip search screen showing auto-complete" class="extra-space extra-space-b4 img-fluid">
+                </section>
+                <section class="persona-creation">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/persona_creation.png" alt="Icon with words Persona Creation" class="img-fluid met-img">
+                                </div>     
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Defining a user persona based on research</h2>
                             </div>
                         </div>
-                        <p class="flex-lg-10 flex-xl-10 p-gb">The first screen encountered by the user has a simple and unequivocal call to action that reveals the value proposition of PukkaTrip: search a destination and find authentic local experiences. All while incorporating an auto-complete search functionality.</p>
+                        <p class="p-gb">With a better understanding of the behavioral and cognitive processes of potential users, I proceeded to create a persona, which was the guiding force of ideation and prototyping.</p>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <div class="col-sm-6 col-md-6">
-                                <img src="images/pukka_trip/hi-fi-v.1/search results.jpg" alt="PukkaTrip search results screen with more filters expanded" class="extra-space extra-space-b4 img-fluid">
-                            </div>
-                            <div class="col-sm-6 col-md-6">
-                                <img src="images/pukka_trip/hi-fi-v.1/search results poll.jpg" alt="PukkaTrip search results screen with more filters expanded and submit a poll pop-up" class="extra-space extra-space-b4 img-fluid">
-                            </div>
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10 p-gb">Search results allow users to discover information facets by displaying icons with labels. Users can customize results by tapping "More filters" and selecting relevant filters. A pop-up message appears at the bottom of the screen to invite users to submit a poll question for personalized information.</p>
+                    <div class="row grey-box">
+                        <img src="images/pukka_trip/pukka-persona.png" alt="user persona with pictures, bio, goals, traveling habits, tech use and frustrations" class="img-fluid persona">
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 d-flex flex-column flex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <div class="col-sm-6 col-md-6">
-                                <img src="images/pukka_trip/hi-fi-v.1/reply to poll blank.jpg" alt="PukkaTrip send a poll invitation screen" class="extra-space extra-space-b4 img-fluid">
-                            </div>    
-                            <div class="col-sm-6 col-md-6">
-                                <img src="images/pukka_trip/hi-fi-v.1/reply to poll entry.jpg" alt="PukkaTrip send a poll screen" class="extra-space extra-space-b4 img-fluid">
-                            </div>
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10 p-gb extra-space">Users are encouraged to reply to another user's poll after sending theirs. Responding is made simple and can be completed on the same screen. Users have the option to change the poll question or to complete this step later.</p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 d-flex flex-column lex-lg-row flex-xl-row">
-                        <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
-                            <div class="col-sm-6 col-md-6">
-                                <img src="images/pukka_trip/hi-fi-v.1/account.jpg" alt="PukkaTrip account screen with poll notifications badge" class="extra-space extra-space-b4 img-fluid">
-                            </div>
-                            <div class="col-sm-6 col-md-6">
-                                <img src="images/pukka_trip/hi-fi-v.1/polls home.jpg" alt="PukkaTrip poll screens filtered by received responses" class="extra-space extra-space-b4 img-fluid">
-                            </div>
-                        </div>
-                        <p class="flex-lg-10 flex-xl-10 p-gb">Users can see their account, which shows gives them access to trips created, searching for new destinations, and sent poll questions and responses. A notification icon shows poll responses received. Users see responses received to each poll question and can save relevant ones to the same or a new trip for easy access.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="usability-testing-2">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/usabiliy_testing.png" alt="Icon with words Usability Testing" class="img-fluid met-img">
-                            </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">The second round of usability testing: Making sure that the prototype works as intended</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
+                        <div class="container-fluid">
+                            <p class="p-gb p-gb-above">To further determine the scope of the problem, I created a user scenario that added specific constraints to the persona’s situation and goals. This scenario was part of a larger client journey map that identified feelings, pain points, opportunities. <span><a href="PukkaTrip_Journey_Map.pdf"  target="_blank" rel="noopener noreferrer" class="in-text-link">The full client journey map can download here.</a></span></p>
                         </div>
                     </div>
-                    <p>To test the user flow, I performed usability testing with four users keeping in mind the defined user scenario.</p>
-                    <p>The main goal for the usability test was to evaluate if the app allowed users to find information about an authentic local experience at his/her vacation travel destination.</p>
-                    <h3>User tasks</h3>
-                    <ul>
-                        <li>Describe what the app is for</li>
-                        <li>Search a destination and apply filters</li>
-                        <li>Send a poll</li>
-                        <li>Respond to a fellow traveler’s poll </li>
-                        <li>Review received poll responses</li>
-                        <li class="extra-space">Add poll responses to a trip</li>
-                    </ul>
-                </div>
-                <div class="row grey-box extra-padding">
-                    <h3 class="h3-gbox">Usability testing takeaways</h3>
-                    <div class="d-flex flex-column flex-sm-row flex-md-row flex-large-row">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="row d-flex flex-column flex-sm-column flex-md-column flex-lg-column flex-xl-row grey-box text-columns extra-padding">
+                        <div class="row flex-lg-column col-xl-7 nopadding per-sce-goal">
+                            <h3 class="h3-gbox">Scenario</h3>
+                            <p>Marco is 34 years old. He is a Civil Engineer and lives in Portland, Oregon. Marco just booked his flight to Lima, Peru. Now, he is planning activities for his trip. Unfortunately, he is having a hard time finding authentic and unique experiences.</p>
+                            <p>He keeps finding the same type of activities in the different travel sites and nearly zero information about locals’ favorite restaurants and breweries.</p>
+                            <p>Marco is feeling deflated and fears ending up visiting all the places that are meant for tourists and miss the uniqueness of Lima.</p>
+                        </div>
+                        <div class="row flex-lg-column col-xl-5 nopadding per-sce-goal">
+                            <h3 class="h3-gbox">Goals</h3>
                             <ul>
-                                <li>Users were able to describe the value proposition of the app by looking at the first couple of screens</li>
-                                <li>Users were willing to contribute to the community by submitting a response to a poll and thought it was a simple step</li>
-                                <li>Users liked the ability to add information found on the app to a specific trip</li>
-                                <li>The search could be more sophisticated to accommodate advanced users</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 ul-neg-margin">
-                            <ul>
-                                <li>The visual design needs to be improved to facilitate the usability of filters on the search results page and access to other functionalities such as reviewing poll responses</li>
-                                <li>Refining language around benefits for creating an account before submitting a poll could help justify burden and incentivize account creation</li>
+                                <li>Having authentic and unique experiences while traveling</li>
+                                <li>Maximizing his time and budget choosing the right things to do and places to eat</li>
+                                <li>Staying away from tourist traps and get to discover the essence of a place through authentic food and beer</li>
                             </ul>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="ideation-2">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/ideation.png" alt="Icon with word Ideation" class="img-fluid met-img">
+                </section>
+                <section class="competitive-analysis">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">                
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/competitive_analysis.png" alt="Icon with words Competitive Analysis" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Gathering information from competitors to find out if others already address the user needs</h2>
                             </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Translating user feedback into design improvements</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
-                        </div>
-                    <h3 class="h2-h3">Ideation iteration</h3 class="h2-h3">
-                    <p>After receiving valuable feedback from the user and analyzing the results, I translated the takeaways into design goals and revised the wireframes</p>
-                    <h4>Iteration goals</h4>
-                    <ul>
-                        <li>Preserve critical path since it was successful in helping users accomplish their goal</li>
-                        <li>Improve visual design to address usability and discoverability issues by getting rid of small font sizes and increasing button contrast</li>
-                        <li>Add features aimed to increase efficiency for advance users</li>
-                        <li>Revise language around the need to create an account to use critical app functionality</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="prototyping-3">
-                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
-                    <div class="container-fluid">
-                        <div class="row sec-title">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="images/methodology/protyping.png" alt="Icon with word Prototyping" class="img-fluid met-img">
-                            </div>
-                            <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Prototype with revised wireframes</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
-                        </div>
+                        </div>    
+                        <h3 class="h2-h3">Competitive Analysis: </h3 class="h2-h3">
+                        <p>To ideate solutions that would help the user achieve his goals, I performed a competitive analysis to figure out if other products were addressing the user needs and, if so, how they were doing it.</p>
+                        <p>I was able to find a direct and indirect competitor and performed a strengths and weaknesses assessment of their products as they relate to the user’s goals.</p>
+                        <p class="p-gb">Although both competitors have strengths, they are not truly addressing the user pain points.</p>
                     </div>
-                    <video src=""></video>
-                    <a href="http://" class="col-12 in-text-link"><p class="extra-space text-centered">Click here to access clickable   prototype on Figma</p></a>
-                </div>
-            </section>
-            <section class="kpi-next_steps">
-                <div class="row grey-box">
-                    <div class="d-flex flex-column flex-sm-row flex-md-row flex-large-row">  
-                        <div class="col-sm-6 col-md-6 col-lg-6">
-                            <h3 class="h3-gbox">Potential success metrics for a product like PukkaTrip</h3>
-                            <p>Even though PukkaTrip was a conceptual project, potential KPIs for this app could be:</p>
+                    <div class="row d-flex flex-column flex-xl-row">
+                        <div class="d-flex flex-column col-xl-6 grey-box">
                             <div>
-                                <ul>
-                                    <li>A decrease in user’s time spent finding information about activities that locals do at their destinations</li>
-                                    <li>Increased user’s confidence in their ability to find an authentic and unique experience when using the app</li>
-                                    <li>Increased user satisfaction with experiences enjoyed during their trip</li>
-                                    <li>Growth in size of user/traveler community connected by the app</li>
-                                    <li>User’s sustained engagement and contribution to the app via poll responses and recommendations</li>
-                                </ul>
+                                <h4 class="h4-gb nopadding col-12">Direct competitor:<br>Jetzy - Travel like a local</h4>
+                            </div>  
+                            <div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row">
+                                <div class="d-flex flex-column flex-sm-row flex-md-row flex-row-column flex-xl-column col-sm-12 col-md-6 col-lg-6 col-xl-4 comp-screens nopadding">
+                                    <img src="images/pukka_trip/jetzy-chat.jpg" alt="Jetzy post/chat screen" class="comp-img img-fluid">
+                                    <img src="images/pukka_trip/jetzy-search.jpg" alt="Jetzy search screen" class="comp-img img-fluid">
+                                </div>
+                                <div class="st-and-we flex-sm-column flex-lg-column flex-xl-column">
+                                    <h5>Strengths</h5>
+                                    <ul>
+                                        <li>Tagline communicates the value proposition</li>
+                                        <li>Allows direct communication between users</li>
+                                    </ul>
+                                    <h5>Weaknesses</h5>
+                                    <ul>
+                                        <li>Unnecessary entry-point friction</li>
+                                        <li>Inconsistent UI</li>
+                                        <li>The user flow does not lead to finding information to travel like a local</li>
+                                        <li>Does not allow to save relevant information shared by other users</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
-                            <h3 class="h3-gbox">Potential next steps for  PukkaTrip</h3>
-                            <p>Potential next steps for PukkaTrip could be:</p>
+                        <div class="d-flex flex-column col-xl-6 grey-box">
                             <div>
+                                <h4 class="h4-gb col-12">Indirect Competitor:<br>Forums, Tripadvisor - Read, review, compare prices and book</h4>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row">
+                                <div class="d-flex flex-column flex-sm-row flex-md-row flex-row-column flex-xl-column col-sm-12 col-md-6 col-lg-6 col-xl-4 comp-screens nopadding">
+                                    <img src="images/pukka_trip/forum-home.jpg" alt="Tripadvisor screen" class="comp-img img-fluid">
+                                    <img src="images/pukka_trip/forum-search.jpg" alt="Tripadvisor Forums search screen" class="comp-img img-fluid">
+                                </div>
+                                <div class="st-and-we flex-sm-column flex-lg-column flex-xl-column">
+                                    <h5>Strengths</h5>
+                                    <ul>
+                                        <li>A simple and intuitive interface, conducive to finding authentic information</li>
+                                        <li>Secures authentic information by other users</li>
+                                        <li>Reduces friction at the entry point</li>
+                                    </ul>
+                                    <h5>Weaknesses</h5>
+                                    <ul>
+                                        <li>No way to determine locals’ info vs. travelers’ info and no way to filter by locals’ recommendations</li>
+                                        <li>No way to download information saved for offline use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="how-might-we">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/hmw.png" alt="Icon with words How Might We" class="img-fluid met-img">
+                                </div> 
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">How might we address the user's pain point and help him achieve his goals?</h2>
+                            </div>
+                        </div>
+                        <p>With a good understanding of the persona, his needs and goals, and the fact that the competitors are not addressing the user needs, I proceeded to define a “How Might We” statement to guide the ideation process.</p>
+                        <p class="text-highlight full-width">How might we help users find authentic information about unique local experiences available at their destinations?</p class="text-highlight">
+                    </div>
+                </section>
+                <section class="ideation-1">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">  
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/ideation.png" alt="Icon with words ideation" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Ideating solutions to solve the user pain points</h2class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                            </div>
+                        </div>
+                        <h3 class="h2-h3">Ideation and Prioritization</h3>
+                        <p>With the persona created in mind, the ideation process begins.</p>
+                        <p>I used the "I like, I wish, What if" method to generate ideas aimed to solve the pain points of this user persona. His goals, habits, must-haves, frustrations, and personality are at the forefront of ideation.</p>
+                        <p class="p-gb">As a next step, I used a prioritization matrix to identify what ideas could potentially become features based on users' satisfaction and their viability/feasibility for PukkaTrip as a company.</p>
+                    </div>
+                    <div class="row d-flex flex-row grey-box" id="ide-box">
+                        <div class="col-sm-4, col-md-4">
+                            <img src="images/pukka_trip/me_affinity_mapping.jpg" alt="Adriana pointing at post-its on the wall" class="img-fluid ide-img">
+                        </div>
+                        <div class="brainstorm col-sm-8 col-md-8">
+                            <h4>I like...</h4>
+                            <ul>
+                                <li>Having access to my travel info on my phone and offline</li>
+                            </ul>
+                            <h4>I wish...</h4>
+                            <ul>
+                                <li>I could connect with locals when I’m planning my trip</li>
+                                <li>I could always get information that is up to date</li>
+                                <li>I could save and revisit information about local activities that I want to do at my destination</li>
+                            </ul>
+                            <h4>What if...</h4>
+                            <ul>
+                                <li>I could poll locals about their favorite activities, restaurants, and breweries.</li>
+                                <li>Responding to questions other travelers have about the area where I live, would give me some sort of benefit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
+                        <p class="p-gb-above">Prioritization of the features that came out of the ideation phase took a couple of iterations. I focused on features that were key as they directly allow the user to accomplish his goal. By limiting the number of features, I came up with a minimum valuable product.</p>
+                    </div>
+                    <img src="images/pukka_trip/matrix.jpg" alt="Feature prioritization matrix focused on higher desirability and higher viability" class="img-fluid matrix">
+                    <p class="legend" id="legend-matrix">Revised feature prioritization</p>
+                    <div class="grey-box two-sides-text extra-space-b4 extra-padding">
+                        <div class="side-40">
+                            <h3 class="h3-gbox">A challenge</h3>
+                            <p>At this point in the ideation process, I realized that integrating a poll feature that allows users to post questions and receive individualized responses would address the user’s pain points and make it stand out from competitors.</p>
+                            <p>However, a poll feature requires users to engage with the app by responding to other travelers’ polls, which makes the functionality sustainable and keeps the information authentic. Answering to other users' questions is a big ask that could deter some potential users from using the app.</p>
+                            <p>To move forward, I took a close look at the user persona and concluded that a poll feature would be well adopted by my user based on the following assumptions.</p>
+                        </div>
+                        <div class="side-60">
+                            <h4>Assumptions</h4>
+                            <ul>
+                                <li>The user is a traveler who plans ahead and enjoys discovering and connecting with others</li>
+                                <li>The user is willing to take extra steps to make sure he gets the information he needs to maximize his travel experience</li>
+                            </ul>
+                            <h4>Important considerations for the adoption of the poll feature</h4>
+                            <ul>
+                                <li>The user will be shown previous poll responses and other users’ contributions before committing to submit a poll</li>
+                                <li>After sending a poll the user will be invited to, not required to, reply to a fellow traveler's poll</li>
+                                <li>Replying to a poll has to be as effortless as possible. Language in the request should be carefully crafted to incentivize its use and boost user’s buy-in</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-3 col-xl-6 offset-xl-4">
+                        <h3>User flow diagram</h3>
+                        <p>Once I decided to commit to including a poll feature, I began defining the user flow.</p>
+                        <h4>Goals</h4>
+                        <ul>
+                            <li>Defining a critical path that allowed the user to browse through locals’ and travelers’ recommendations</li>
+                            <li>Allowing the user to submit a poll to get current and individualized answers to his questions and review poll responses</li>
+                            <li>Figuring out a way to keep the community sustainable by encouraging users to provide authentic information to other users</li>
+                            <li>Reducing friction at entry-point<p><em>Note:</em> This user flow incorporates the task of creating an account to submit a poll. Although it can be off-putting for some users, we are assuming that our user does most of his planning on his own and way in advance. Therefore, he is used to creating accounts to manage and keep track of the information he needs for his trip. There will be wording clarifying the convenience of creating an account on the screen.</p></li>
+                        </ul>                
+                    </div>
+                    <div class="row grey-box">
+                        <img src="images/pukka_trip/critical-path-user-flow.png" alt="Critical path user flow: Launch App, Enter destination, Show search results, Narrow results with filters, Does user want specific information?, if yes, Submit a poll, Does user have an account?, if no, Sign up with Google, Facebook or email, Provide location information?, if yes, Enter location manually, Enter trip name, Write and send poll question, Enable notifications?, if yes or no, Is user willing to respond to a  poll?, Write and send poll response, Go to profile to review sent poll question responses, Save relevant responses to trip" class="img-fluid edge-to-edge-img">
+                    </div>
+                </section>
+                <section class="prototyping-1">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/protyping.png" alt="Icon with words prototyping" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Creating a user interface</h2 class="h2-h3">
+                            </div>
+                        </div>
+                        <h3 class="h2-h3">User interface goals and considerations</h3 class="h2-h3">
+                        <ul>
+                            <li>Have a clear and unequivocal path to getting relevant information about experiences at a potential destination</li>
+                            <li>An early introduction to facets: poll responses from travelers and locals, tips from locals, and categories of information available within those</li>
+                            <li>Consistent and predictable UI patterns</li>
+                        </ul>
+                        <h3 class="extra-space">Sketches</h3>
+                    </div>
+                    <div class="row d-flex flex-column flex-md-row flex-lg-row flex-xl-row grey-box">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <img src="images/pukka_trip/paper-wireframes/search-screen.jpg" alt="Sketch of search layout" class="extra-space extra-space-b4 img-fluid" id="wire-img-single">
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10">The first screen conveys the purpose of the app and allows the user to search for the information he needs right away by entering his destination.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <img src="images/pukka_trip/paper-wireframes/search-results.jpg" alt="Sketches of search results and filters" class="img-fluid extra-space extra-space-b4">
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10">Categories of information are introduced early and reinforced with descriptive words and icons.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <img src="images/pukka_trip/paper-wireframes/account-privacy.jpg" alt="Sketches of sign up screen and location permissions screen" class="img-fluid extra-space extra-space-b4">
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10">Creating an account is only needed after valuable information has been shown to the user when he decides to submit a poll and to facilitate response tracking. The app respects user privacy and gives an alternative to location tracking.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <img src="images/pukka_trip/paper-wireframes/trip-poll.jpg" alt="Sketches of create a trip and send poll screens" class="extra-space extra-space-b4 img-fluid">
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10">The app allows creating a trip and associate tips and recommendations to it to increase convenience for users who are planners and appreciate organization.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <img src="images/pukka_trip/paper-wireframes/reply-poll.jpg" alt="Sketches of request to reply to poll and poll reply screens" class="img-fluid extra-space extra-space-b4">
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10">The app encourages users to support other travelers by replying to their polls without forcing them to do so.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <img src="images/pukka_trip/paper-wireframes/profile-responses.jpg" alt="Sketches of account and poll screens" class="img-fluid extra-space extra-space-b4">
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10">The account/profile screen has a simple interface that shows the user how to interact with the app. Here users will be able to see created trips and polls as well as responses sent and received.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="usability-testing-1">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">                    
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/usabiliy_testing.png" alt="" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">The first round of usability testing</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                            </div>
+                        </div>
+                        <p class="p-gb">Before moving on to hi-fi prototyping, I sought feedback on these initial sketches to test the user flow. I got fascinating feedback.</p>
+                    </div>
+                    <div class="row grey-box extra-padding">
+                        <h3 class="h3-gbox">Usability testing takeaways</h3>
+                        <div class="d-flex flex-column flex-sm-row flex-md-row flex-large-row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
                                 <ul>
-                                    <li>Test critical path with a larger number of users with similar goals of those of the user persona</li>
-                                    <li>Give users the option to apply filters before they search so they are directed to more relevant information as soon as possible</li>
-                                    <li>Design alternative user paths that could result in increased conversion; for example, by designing a path to save relevant information to a trip without submitting a poll</li>
+                                    <li>Users were excited about the poll feature but thought it was hard to discover</li>
+                                    <li>Users felt overwhelmed by the number of filters shown and thought they took too much space on the screen</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 ul-neg-margin">
+                                <ul>
+                                    <li>Users found that signing up with existent accounts like Google or Facebook was convenient</li>
+                                    <li>Users like the prompt to create a trip to organize all information related to their destination</li>
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section class="prototyping-2">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/protyping.png" alt="Icon with word Prototyping" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Iterating based on users’ feedback</h2>
+                            </div>
+                        </div>
+                        <h3 class="h2-h3">Wireframes</h3>
+                        <p class="p-gb">Incorporating the feedback received in round one of usability testing, I worked on Figma to design hi-fi wireframes and a prototype.</p>
+                    </div>
+                    <div class="row d-flex flex-column flex-md-row flex-lg-row flex-xl-row grey-box">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <div class="col-sm-6 col-md-6">
+                                    <img src="images/pukka_trip/hi-fi-v.1/search.jpg" alt="PukkaTrip search screen" class="extra-space extra-space-b4 img-fluid">
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <img src="images/pukka_trip/hi-fi-v.1/search entry select.jpg" alt="PukkaTrip search screen showing auto-complete" class="extra-space extra-space-b4 img-fluid">
+                                </div>
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10 p-gb">The first screen encountered by the user has a simple and unequivocal call to action that reveals the value proposition of PukkaTrip: search a destination and find authentic local experiences. All while incorporating an auto-complete search functionality.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <div class="col-sm-6 col-md-6">
+                                    <img src="images/pukka_trip/hi-fi-v.1/search results.jpg" alt="PukkaTrip search results screen with more filters expanded" class="extra-space extra-space-b4 img-fluid">
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <img src="images/pukka_trip/hi-fi-v.1/search results poll.jpg" alt="PukkaTrip search results screen with more filters expanded and submit a poll pop-up" class="extra-space extra-space-b4 img-fluid">
+                                </div>
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10 p-gb">Search results allow users to discover information facets by displaying icons with labels. Users can customize results by tapping "More filters" and selecting relevant filters. A pop-up message appears at the bottom of the screen to invite users to submit a poll question for personalized information.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 d-flex flex-column flex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <div class="col-sm-6 col-md-6">
+                                    <img src="images/pukka_trip/hi-fi-v.1/reply to poll blank.jpg" alt="PukkaTrip send a poll invitation screen" class="extra-space extra-space-b4 img-fluid">
+                                </div>    
+                                <div class="col-sm-6 col-md-6">
+                                    <img src="images/pukka_trip/hi-fi-v.1/reply to poll entry.jpg" alt="PukkaTrip send a poll screen" class="extra-space extra-space-b4 img-fluid">
+                                </div>
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10 p-gb extra-space">Users are encouraged to reply to another user's poll after sending theirs. Responding is made simple and can be completed on the same screen. Users have the option to change the poll question or to complete this step later.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 d-flex flex-column lex-lg-row flex-xl-row">
+                            <div class="d-flex flex-colum flex-sm-row flex-md-row flex-lg-3 flex-xl-4">
+                                <div class="col-sm-6 col-md-6">
+                                    <img src="images/pukka_trip/hi-fi-v.1/account.jpg" alt="PukkaTrip account screen with poll notifications badge" class="extra-space extra-space-b4 img-fluid">
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <img src="images/pukka_trip/hi-fi-v.1/polls home.jpg" alt="PukkaTrip poll screens filtered by received responses" class="extra-space extra-space-b4 img-fluid">
+                                </div>
+                            </div>
+                            <p class="flex-lg-10 flex-xl-10 p-gb">Users can see their account, which shows gives them access to trips created, searching for new destinations, and sent poll questions and responses. A notification icon shows poll responses received. Users see responses received to each poll question and can save relevant ones to the same or a new trip for easy access.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="usability-testing-2">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/usabiliy_testing.png" alt="Icon with words Usability Testing" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">The second round of usability testing: Making sure that the prototype works as intended</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                            </div>
+                        </div>
+                        <p>To test the user flow, I performed usability testing with four users keeping in mind the defined user scenario.</p>
+                        <p>The main goal for the usability test was to evaluate if the app allowed users to find information about an authentic local experience at his/her vacation travel destination.</p>
+                        <h3>User tasks</h3>
+                        <ul>
+                            <li>Describe what the app is for</li>
+                            <li>Search a destination and apply filters</li>
+                            <li>Send a poll</li>
+                            <li>Respond to a fellow traveler’s poll </li>
+                            <li>Review received poll responses</li>
+                            <li class="extra-space">Add poll responses to a trip</li>
+                        </ul>
+                    </div>
+                    <div class="row grey-box extra-padding">
+                        <h3 class="h3-gbox">Usability testing takeaways</h3>
+                        <div class="d-flex flex-column flex-sm-row flex-md-row flex-large-row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <ul>
+                                    <li>Users were able to describe the value proposition of the app by looking at the first couple of screens</li>
+                                    <li>Users were willing to contribute to the community by submitting a response to a poll and thought it was a simple step</li>
+                                    <li>Users liked the ability to add information found on the app to a specific trip</li>
+                                    <li>The search could be more sophisticated to accommodate advanced users</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 ul-neg-margin">
+                                <ul>
+                                    <li>The visual design needs to be improved to facilitate the usability of filters on the search results page and access to other functionalities such as reviewing poll responses</li>
+                                    <li>Refining language around benefits for creating an account before submitting a poll could help justify burden and incentivize account creation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ideation-2">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/ideation.png" alt="Icon with word Ideation" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Translating user feedback into design improvements</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                            </div>
+                        <h3 class="h2-h3">Ideation iteration</h3 class="h2-h3">
+                        <p>After receiving valuable feedback from the user and analyzing the results, I translated the takeaways into design goals and revised the wireframes</p>
+                        <h4>Iteration goals</h4>
+                        <ul>
+                            <li>Preserve critical path since it was successful in helping users accomplish their goal</li>
+                            <li>Improve visual design to address usability and discoverability issues by getting rid of small font sizes and increasing button contrast</li>
+                            <li>Add features aimed to increase efficiency for advance users</li>
+                            <li>Revise language around the need to create an account to use critical app functionality</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="prototyping-3">
+                    <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <div class="container-fluid">
+                            <div class="row sec-title">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                    <img src="images/methodology/protyping.png" alt="Icon with word Prototyping" class="img-fluid met-img">
+                                </div>
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">Prototype with revised wireframes</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                            </div>
+                        </div>
+                        <video src=""></video>
+                        <a href="http://" class="col-12 in-text-link"><p class="extra-space text-centered">Click here to access clickable   prototype on Figma</p></a>
+                    </div>
+                </section>
+                <section class="kpi-next_steps">
+                    <div class="row grey-box">
+                        <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">  
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <h3 class="h3-gbox">Potential success metrics for a product like PukkaTrip</h3>
+                                <p>Even though PukkaTrip was a conceptual project, potential KPIs for this app could be:</p>
+                                <div>
+                                    <ul>
+                                        <li>A decrease in user’s time spent finding information about activities that locals do at their destinations</li>
+                                        <li>Increased user’s confidence in their ability to find an authentic and unique experience when using the app</li>
+                                        <li>Increased user satisfaction with experiences enjoyed during their trip</li>
+                                        <li>Growth in size of user/traveler community connected by the app</li>
+                                        <li>User’s sustained engagement and contribution to the app via poll responses and recommendations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <h3 class="h3-gbox">Potential next steps for  PukkaTrip</h3>
+                                <p>Potential next steps for PukkaTrip could be:</p>
+                                <div>
+                                    <ul>
+                                        <li>Test critical path with a larger number of users with similar goals of those of the user persona</li>
+                                        <li>Give users the option to apply filters before they search so they are directed to more relevant information as soon as possible</li>
+                                        <li>Design alternative user paths that could result in increased conversion; for example, by designing a path to save relevant information to a trip without submitting a poll</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
                     </div> 
-                </div> 
-            </section>   
-        </main>
-
-        <!-- add divider
-        add other project cards
-        add divider
-        add footer 
-        + make video
-        + style side bar
-        + figure out how to make bar sticky
-        + complete story board-->
-
+                </section>   
+            </main>
+        </div>
     </div>
 
+    <div class="divider">
+        <div class="small-circle-yellow"></div>
+        <div class="small-circle-blue"></div>
+        <div class="small-circle-yellow"></div>
+        <div class="small-circle-blue"></div>
+        <div class="small-circle-yellow"></div>
+        <div class="small-circle-blue"></div>    
+        <div class="small-circle yellow"></div>
+        <div class="small-circle-yellow"></div>
+        <div class="small-circle-blue"></div>
+        <div class="small-circle-yellow"></div>
+    </div>
 
+    <div class="main main-grid container-fluid d-flex flex-column">
 
+        <h2 class="title col-10 offset-1 col-xl-6 offset-xl-3">Other projects</h2>              
+    
+        <a href="#" class="a-mycard col-10 offset-1 col-xl-6 offset-xl-3" id="card2">
+            <section class="mycard mg-2">
+            <h3 class="mycard">National Park Service: Redesigning a government experience on desktop and mobile </h3>
+            <p class="mycard">A UX design study focused on information architecture and UI design</p>
+            <img src="images/homepage/nps@2x.png" alt="Laptop and mobile phone with screens from NPS redesign" class="mycard-img mycard-img2">
+            <div class="button-container d-flex">
+                <div class="my-button-link">
+                    <div class="inner-button-div">
+                    <div class="link-hover" id="lh2">View&nbsp;case&nbsp;study</div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </a>
+        <a href="#" class="a-mycard col-10 offset-1 col-xl-6 offset-xl-3" id="card3">
+            <section class="mycard mg-3">
+            <h3 class="mycard">Vision to Learn: Designing a donation path for a nonprofit website</h3>
+            <p class="mycard">A UX design study focused on usability testing, IA and UI design</p>
+            <img src="images/homepage/vision_to_learn@2x.png" alt="Desktop with Vision to Learn screen" class="mycard-img mycard-img3">
+            <div class="button-container d-flex">
+                <div class="my-button-link">
+                    <div class="inner-button-div">
+                    <div class="link-hover" id="lh3">View&nbsp;case&nbsp;study</div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </a>
+        <div class="decoration1 right-decor mg-4">
+            <div class="circle rdc1"></div>
+            <div class="circle rdc2"></div>
+            <div class="circle rdc3"></div>
+            <div class="circle rdc4"></div>
+            <div class="circle rdc5"></div>
+            <div class="circle rdc6"></div>
+            <div class="circle rdc7"></div>
+            <div class="circle rdc8"></div>
+            <div class="circle rdc9"></div>
+            <div class="circle rdc10"></div>
+            <div class="circle rdc11"></div>
+            <div class="circle rdc12"></div>
+        </div>
+        <div class="decoration2 right-decor mg-5">
+            <div class="circle rdc1"></div>
+            <div class="circle rdc2"></div>
+            <div class="circle rdc3"></div>
+            <div class="circle rdc4"></div>
+            <div class="circle rdc5"></div>
+            <div class="circle rdc6"></div>
+            <div class="circle rdc7"></div>
+            <div class="circle rdc8"></div>
+            <div class="circle rdc9"></div>
+            <div class="circle rdc10"></div>
+            <div class="circle rdc11"></div>
+            <div class="circle rdc12"></div>
+        </div>
+        <div class="decoration3 right-decor mg-6">
+            <div class="circle rdc1"></div>
+            <div class="circle rdc2"></div>
+            <div class="circle rdc3"></div>
+            <div class="circle rdc4"></div>
+            <div class="circle rdc5"></div>
+            <div class="circle rdc6"></div>
+            <div class="circle rdc7"></div>
+            <div class="circle rdc8"></div>
+            <div class="circle rdc9"></div>
+            <div class="circle rdc10"></div>
+            <div class="circle rdc11"></div>
+            <div class="circle rdc12"></div>
+        </div>
+    </div>
 
+    <div class="divider">
+        <div class="small-circle-yellow"></div>
+        <div class="small-circle-blue"></div>
+        <div class="small-circle-yellow"></div>
+        <div class="small-circle-blue"></div>
+        <div class="small-circle-yellow"></div>
+        <div class="small-circle-blue"></div>    
+        <div class="small-circle yellow"></div>
+        <div class="small-circle-yellow"></div>
+        <div class="small-circle-blue"></div>
+        <div class="small-circle-yellow"></div>
+    </div> 
 
+    <footer class="footer-grid">
+        <section class="fi-1">
+        <ul class="footer-options">
+            <li class="footer-item" id="footer-item1">
+            <a href="https://www.linkedin.com/in/adriana-garzon-portela/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                <div class="footer-option-box">
+                <div class="icon-circle footer-hover" id="footer-hover1"><img class="linkedin" src="images/linkedin.png" alt="Linkedin logo"></div>
+                <p class="footer-label" id="footer-label1">Find me<br>on Linkedin</p>
+                </div>
+            </a>
+            </li>
+            <li class="footer-item" id="footer-item2">
+            <a href="mailto:adriana.garzon.portela@gmail.com" class="footer-link">
+                <div class="footer-option-box">
+                <div class="icon-circle footer-hover" id="footer-hover2"><img class="email" src="images/envelope.png" alt="Image of an envelope"></div>
+                <p class="footer-label" id="footer-label2">Contact me at<br>adriana.garzon.portela@gmail.com</p class="footer-label">
+                </div>
+            </a>
+            </li>
+            <li class="footer-item" id="footer-item3">
+            <a href="AdrianaGarzonPortela-Resume.pdf" target="_blank" rel="noopener noreferrer" class="footer-link">
+                <div class="footer-option-box">
+                <div class="icon-circle footer-hover" id="footer-hover3"><img class="doc" src="images/blank_page.png" alt="Image of a blank document page"></div>
+                <p class="footer-label" id="footer-label3">Download<br>my Resume</p class="footer-label">
+                </div>
+            </a>
+            </li>
+        </ul>
+        </section>
+        <section class="fi-2 copyright">
+        <p>Adriana Garzón P.<br>&copy; 2020 All Rights Reserved</p>
+        </section>    
+    </footer>   
 
     <!--bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!--sticky-button-->
-    <script src="js/back-to-top-button.js"></script>
+    <script src="./js/back-to-top-button.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/mycards.js"></script>
 </body>
 

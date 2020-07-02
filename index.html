@@ -13,6 +13,7 @@
 <!-- My style sheets -->
   <link rel="stylesheet" type="text/css" href="./css/home_styles.css">
   <link rel="stylesheet" type="text/css" href="./css/global_styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/mycards.css">
   <!-- <link rel="stylesheet" type="text/css" href="./css/bindex.css"> -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Scope+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -23,7 +24,7 @@
 <!--HEADER STARTS-->
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <div class="yellowCircle"><img src="images/ag.png" width="48" alt="Initials AG for Adriana Garzon's logo" loading="lazy"></div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerOptions" aria-controls="navbarTogglerOptions" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,14 +33,14 @@
       
         <div class="collapse navbar-collapse" id="navbarTogglerOptions">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="#"><div class="yellowCircle"><span id="adjustProjects">projects</span></div></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#"><div class="yellowCircle"><span id="adjustAbout">about</span></div></a>
+                </li>
                 <li class="nav-item active">
-                <a class="nav-link" href="#"><div class="yellowCircle"><span id="ajustAbout">about</span></div></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#"><div class="yellowCircle"><span id="adjustProjects">projects</span><span class="sr-only">(current)</span></div></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#"><div class="yellowCircle">home</div></a>
+                <a class="nav-link" href="index.html"><div class="yellowCircle">home</div><span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -55,7 +56,7 @@
 <!--HEADER ENDS-->
 
 <!--MAIN STARTS-->
-<main class="main-grid container-fluid d-flex flex-column">
+<main class="main main-grid container-fluid d-flex flex-column">
   
   <h2 class="title col-10 offset-1 col-xl-6 offset-xl-3">Selected projects</h2>
   
