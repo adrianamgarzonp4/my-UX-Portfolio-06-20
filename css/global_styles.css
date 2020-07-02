@@ -14,7 +14,6 @@ ScopeOne Font scale
 * {
     box-sizing: border-box;
 }
-
 :root {
     --black: #000000;
     --dark-grey: #404040;
@@ -24,133 +23,204 @@ ScopeOne Font scale
     --yellow: #f1e72f;
     font-size: 18px;
 }
-
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
-
-/*GENERAL FONT ADJUSTMENTS*/
+header { /* important: used by navbar text */
+    font-family: 'Scope One', serif;
+    font-weight: bolder;
+    color: var(--blue, #3a4fab);
+    font-size: 1.2rem;
+}
+/******* GENERAL FONT ADJUSTMENTS STARTS *********/
 h1 {
     font-family: 'Scope One', serif;
     color: var(--yellow, #f1e72f);
     font-size: 4.666rem;
+    font-weight: bolder;
     margin: 0px;
 }
-
 h2 {
     font-family: 'Scope One', serif;
     color: var(--blue,#3a4fab);
     font-size: 1.361rem;
     font-weight: bolder;
 }
-
 h3 {
     font-family: 'Scope One', serif;
     color: var(--blue,#3a4fab);
     font-size: 1.2rem;
-    font-weight: bolder;
+    font-weight: 600;
 }
-
 h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
-
+h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
 .text-highlight {
     font-family: 'Scope One', serif;
     font-weight: bold;
     color: var(--blue, #3a4fab);
     font-size: 1.2rem;
 }
+/******* GENERAL FONT ADJUSTMENTS ENDS *********/
 
-
-/*NAVBAR AND FOOTER*/
-nav {
-    background-color: var(--white, #ffffff);
-    padding: 5px;
+/******NAVBAR STARTS******/
+.navbar {
+    padding-top: 0rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
 }
-
-.logo {
-    width: 60px;
+nav.navbar.navbar-light {
+    background-color: rgba(255, 255, 255, 0.65);
 }
-
-.nav-options {
-    display: inline;
-    position: relative;
+.navbar-light .navbar-nav .nav-link { /*navbar links unactive*/
+    color: var(--blue, #3a4fab);
+    font-weight: bolder;
 }
-
-.nav-logo {
-    display: inline;
-    position: relative;
-    left: 50%;
+.navbar-light .navbar-nav .active>.nav-link { /*navbar links active*/
+    color: var(--black, #000000);
 }
-
-.nav-item { /*nav ul li item, not including logo*/
-    width: 100px;
-    height: 54px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link-hover {
+.navbar-light .navbar-nav .active>.nav-link .yellowCircle { /*yellow circle on active navbar link*/
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li div.link-hover:hover {
     background-color: var(--yellow, #f1e72f);
-    color: var(--dark-grey, #404040);
+    padding-top: 20%;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link .yellowCircle { /*yellow circle on unactive navbar links*/
+    width: 54px;
+    height: 54px;
+    background-color: transparent;
+    border-radius: 50%;
+    padding-top: 20%;
+    text-align: center;
+}
+.navbar-light .navbar-nav .active>.nav-link .yellowCircle:hover { /*yellow circle on hover on active navbar link*/
     box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
 }
-
-nav .current .link-hover {
+.navbar-light .navbar-nav .nav-link .yellowCircle:hover { /*yellow circle on hover on unactive navbar links*/
+    color: var(--black, #000000);
     background-color: var(--yellow, #f1e72f);
-    color: var(--dark-grey, #404040);
-    /*box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);*/
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+}
+.navbar-light .navbar-brand .yellowCircle { /*yellow circle on navbar brand*/
+    width: 54px;
+    height: 54px;
+    background-color: transparent;
+    border-radius: 50%;
+    padding-top: 5%;
+    text-align: center;
+}
+.navbar-light .navbar-brand .yellowCircle:hover { /*yellow circle on hover on navbar brand*/
+    background-color: var(--yellow, #f1e72f);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+}
+#adjustAbout { /*adjustment to center text in div*/
+    margin-left: -2px;
+}
+#adjustProjects { /*adjustment to center text in div*/
+    margin-left: -12px;
+}
+.mr-auto, .mx-auto {
+    margin-right: 0!important;
+    margin-left: auto!important;
+}
+.navbar-brand { /*center navbrand*/
+    margin-left: 50%;
+    margin-right: auto;
+}
+.navbar-light .navbar-toggler { /*border color of navbar toogler*/
+    border-color: transparent;
+}
+.navbar-light .navbar-toggler-icon { /*set menu icon to a blue menu png*/
+    background-image: url(../images/menu-blue.png);
 }
 
-nav ul li.logo {
-    position: relative;
-    margin: auto;
+@media (min-width: 992px) { /*Adds spacing to nav items when extended*/
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1.5rem;
+    }
 }
+/*Navbar media queries for yellow circles*/
+@media (max-width: 760px) {
+    .navbar-light .navbar-nav .active>.nav-link .yellowCircle {
+        padding-top: 2%;
+    }
+    .navbar-light .navbar-nav .nav-link .yellowCircle {
+        padding-top: 2%;
+    }
+    /*how can i disable this to just navigate to another page?*/
+    .navbar-light .navbar-nav .nav-link .yellowCircle:hover {
+        padding-top: 2%;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-color: var(--yellow, #f1e72f);
+        border-radius: 25%;
+    }
+}
+@media (min-width: 761px) and (max-width: 991px) {
+    .navbar-light .navbar-nav .active>.nav-link .yellowCircle {
+        padding-top: 1.5%;
+    }
+    .navbar-light .navbar-nav .nav-link .yellowCircle {
+        padding-top: 1.5%;
+    }
+    /*how can i disable this to just navigate to another page?*/
+    .navbar-light .navbar-nav .nav-link .yellowCircle:hover {
+        padding-top: 1.5%;
+    }
+}
+/*navbar media query for toogle button and toogle options*/
+@media (max-width: 991px) {
+    .navbar-collapse .navbar-nav .nav-link {
+        text-align: center;
+        background-color: var(--light-grey, #efefef);
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+    .navbar-brand {
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    .navbar-light .navbar-nav .nav-link .yellowCircle { /*centers navbar links*/
+        margin: auto;
+    }
+}
+/****** NAVBAR ENDS *******/
 
-nav ul li.nav-item {
-    float: right;
-} 
 
-/*NAV AND FOOTER COMMON RULES*/
-nav li a, footer li a {
+/**** FOOTER STARTS ****/
+footer {
+    background-color: var(--light-grey, #efefef);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+footer li a {
     font-family: 'Scope One', serif;
     font-weight: bolder;
-    text-decoration: none;
     color: var(--blue, #3a4fab);
     font-size: 1.2rem;
 }
-
-nav ul, footer ul {
+a.footer-link {
+    text-decoration: none;
+}
+footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
-/*FOOTER*/
-footer {
-    background-color: var(--light-grey, #efefef);
-    /*border-top: solid 2px var(--blue, #3a4fab);*/
-    /*background: linear-gradient(#efefef, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);*/
-}
-
 footer section ul.footer-options { /*ul*/
     display: inline-flex;
 }
-
 footer section ul li a div.footer-option-box p {
     text-align: center;
     margin-right: 48px;
@@ -158,75 +228,71 @@ footer section ul li a div.footer-option-box p {
     line-height: 1.25rem;
     font-size: 1rem;
 }
-
 footer section ul li a div.footer-option-box div {
     margin: auto;
 }
-
 .icon-circle {
     background-color: var(--yellow, #f1e72f);
     width: 34px;
     height: 34px;
     border-radius: 50%;
 }
-
 .linkedin {
     display: block;
     margin: auto;
     padding-top: 9px;
     width: 16px;
 }
-
 .email {
     display: block;
     margin: auto;
     padding-top: 9px;
     width: 20px;
 }
-
 .doc {
     display: block;
     margin: auto;
     padding-top: 6px;
     width: 16px;
 }
-
 .copyright {
     font-size: 0.735rem;
     color: var(--blue, #3a4fab);
     text-align: center;
+    margin-top: 1rem; 
 }
-
-div.footer-hover:hover {
-    transform: scale(1.5);
-    color: var(--dark-grey, #404040);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+.footer-label {
+    padding-top: 1rem;
 }
-
-/*footer section ul li a div.footer-option-box p:hover {
-    color: var(--dark-grey, #404040);
-}*/
-
 /*Footer Grid*/
 .footer-grid {
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 2fr 0.5fr;
     justify-items: center;
     align-items: center;
 }
-
-.fi-1 { /*links*/ 
+.fi-1 { /*links*/
     grid-row: 1 / 2;
     align-self: end;
     padding-top: 2%;
 }
-
-.fi-2 { /*copyright*/ 
+.fi-2 { /*copyright*/
     grid-row: 2 / 3;
+}
+/* Footer media query */
+@media  (max-width: 1199.98px) {
+/*footer*/
+    footer section ul.footer-options { /*ul*/
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .footer-item {
+        margin-top: 1.5rem;
+    }
 }
 
 
-/*DIVIDER*/
+/*********** DIVIDER **********/
 .small-circle-blue {
     width: 10px;
     height: 10px;
@@ -250,35 +316,32 @@ div.footer-hover:hover {
 }
 
 
-/*BUTTON*/
-.inner-button-div {
-    width: 100%;
-    height: 100px; /*OJO:changed from 60 to 100*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-button-link {
-    background-color: transparent;
-    font: bolder 1.2rem 'Scope One', serif;
-    color: var(--blue, #3a4fab);
-    padding: 0px;
-    border: none;
-    cursor: pointer;
-}
-
-.my-button-link .link-hover:hover {
-    background-color: var(--yellow, #f1e72f);
-    color: var(--dark-grey, #404040);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-
-/*DECORATION*/
+/********** DECORATION ***********/
 div .circle { /*decoration circles*/
     background-color: var(--yellow, #f1e72f);
     width: 54px;
     height: 54px;
     border-radius: 50%;
 }
+
+
+/******* BACK-TO-TOP BUTTON ********/
+.material-icons.md-48 {
+    font-size: 48px; /* Increase font size */
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    color: var(--blue, #3a4fab); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+  }
+  .material-icons.md-48:hover {
+    background-color: var(--yellow, #f1e72f); /* Add a dark-grey background on hover */
+    border-radius: 50%; /* Rounded corners */
+  }

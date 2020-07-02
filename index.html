@@ -5,135 +5,148 @@
   <meta charset="UTF-8">
   <meta name="description" content="Adriana Garzon P. UX Portfolio">
   <meta name="author" content="Adriana Garzon P.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/home_styles.css">
-  <link rel="stylesheet" type="text/css" href="css/global_styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+<!-- jquery script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- My style sheets -->
+  <link rel="stylesheet" type="text/css" href="./css/home_styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/global_styles.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/bindex.css"> -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Scope+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
 </head>
 
 <body>
 <!--HEADER STARTS-->
-  <header class="hero-image header-grid">
-    <nav class="hg-4">
-      <ul class="nav-options">
-        <li class="nav-logo">
-          <a href="index.html">
-            <div class="link-hover"><img class="logo" src="images/ag.png" alt="Initials AG for Adriana Garzon's logo"></div>
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a class="nav-link" href="index.html">
-            <div class="link-hover">home</div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">
-            <div class="link-hover">about</div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects-pukkatrip.html">
-            <div class="link-hover">projects</div>
-          </a>
-        </li>
-      </ul>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <div class="yellowCircle"><img src="images/ag.png" width="48" alt="Initials AG for Adriana Garzon's logo" loading="lazy"></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerOptions" aria-controls="navbarTogglerOptions" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerOptions">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                <a class="nav-link" href="#"><div class="yellowCircle"><span id="ajustAbout">about</span></div></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#"><div class="yellowCircle"><span id="adjustProjects">projects</span><span class="sr-only">(current)</span></div></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#"><div class="yellowCircle">home</div></a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="gradient">
-    <h1 class="hg-1">Adriana Garzón P.</h1>
-    <h2 class="hg-2">User Experience & User Interface Designer</h2>
-    <h3 class="hg-3">Driven by Curiosity | Focused on Impact</h3>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="jum-1">Adriana Garzón P.</h1>
+            <h2 class="jum-2">User Experience & User Interface Designer</h2>
+            <h3 class="jum-3">Driven by Curiosity |<br class="br-only-xs"> Focused on Impact</h3>   
+        </div>
     </div>
   </header>
 <!--HEADER ENDS-->
+
 <!--MAIN STARTS-->
-  <main class="main-grid">
-    <h2 class="title">Selected projects</h2>
-    <a href="projects-pukkatrip.html" class="a-card">
-      <section class="card mg-1">
-        <h3 class="card">PukkaTrip: Creating an app for<br>travelers</h3>
-        <p class="card">A UX design study focusing on<br>user research and usability testing</p> 
-        <img src="images/homepage/pukka_trip@2x.png" alt="PukkaTrip screens on mobile phone" class="card-img">
-        <div class="button-container">
-          <a href="projects-pukkatrip.html" class="my-button-link card">
-              <div class="inner-button-div">
-                <div class="link-hover">View&nbsp;case&nbsp;study</div>
-              </div>
-          </a>
+<main class="main-grid container-fluid d-flex flex-column">
+  
+  <h2 class="title col-10 offset-1 col-xl-6 offset-xl-3">Selected projects</h2>
+  
+  <a href="projects-pukka-trip.html" class="a-mycard col-10 offset-1 col-xl-6 offset-xl-3" id="card1">
+    <section class="mycard mg-1">
+      <h3 class="mycard">PukkaTrip: Creating an app for travelers</h3>
+      <p class="mycard">A UX design study focusing on user research and usability testing</p> 
+      <img src="images/homepage/pukka_trip@2x.png" alt="PukkaTrip screens on mobile phone" class="mycard-img">
+      <div class="button-container d-flex">
+        <div class="my-button-link">
+            <div class="inner-button-div">
+              <div class="link-hover" id="lh1">View&nbsp;case&nbsp;study</div>
+            </div>
         </div>
-      </section>
-    </a>
-    <a href="#" class="a-card">
-      <section class="card mg-2">
-        <h3 class="card">National Park Service: Redesigning a government experience on desktop and mobile </h3>
-        <p class="card">A UX design study focused on information architecture and UI design</p>
-        <img src="images/homepage/nps@2x.png" alt="Laptop and mobile phone with screens from NPS redesign" class="card-img">
-        <div class="button-container">
-          <a href="#" class="my-button-link card">
-              <div class="inner-button-div">
-                <div class="link-hover">View&nbsp;case&nbsp;study</div>
-              </div>
-          </a>
+      </div>
+    </section>
+  </a>
+
+  <a href="#" class="a-mycard col-10 offset-1 col-xl-6 offset-xl-3" id="card2">
+    <section class="mycard mg-2">
+      <h3 class="mycard">National Park Service: Redesigning a government experience on desktop and mobile </h3>
+      <p class="mycard">A UX design study focused on information architecture and UI design</p>
+      <img src="images/homepage/nps@2x.png" alt="Laptop and mobile phone with screens from NPS redesign" class="mycard-img mycard-img2">
+      <div class="button-container d-flex">
+        <div class="my-button-link">
+            <div class="inner-button-div">
+              <div class="link-hover" id="lh2">View&nbsp;case&nbsp;study</div>
+            </div>
         </div>
-      </section>
-    </a>
-    <a href="#" class="a-card">
-      <section class="card mg-3">
-        <h3 class="card">Vision to Learn: Designing a donation path for a nonprofit website</h3>
-        <p class="card">A UX design study focused on usability testing, IA and UI design</p>
-        <img src="images/homepage/vision_to_learn@2x.png" alt="Desktop with Vision to Learn screen" class="card-img">
-        <div class="button-container">
-          <a href="#" class="my-button-link card">
-              <div class="inner-button-div">
-                <div class="link-hover">View&nbsp;case&nbsp;study</div>
-              </div>
-          </a>
+      </div>
+    </section>
+  </a>
+  <a href="#" class="a-mycard col-10 offset-1 col-xl-6 offset-xl-3" id="card3">
+    <section class="mycard mg-3">
+      <h3 class="mycard">Vision to Learn: Designing a donation path for a nonprofit website</h3>
+      <p class="mycard">A UX design study focused on usability testing, IA and UI design</p>
+      <img src="images/homepage/vision_to_learn@2x.png" alt="Desktop with Vision to Learn screen" class="mycard-img mycard-img3">
+      <div class="button-container d-flex">
+        <div class="my-button-link">
+            <div class="inner-button-div">
+              <div class="link-hover" id="lh3">View&nbsp;case&nbsp;study</div>
+            </div>
         </div>
-      </section>
-    </a>
-    <div class="decoration1 right-decor mg-4">
-      <div class="circle rdc1"></div>
-      <div class="circle rdc2"></div>
-      <div class="circle rdc3"></div>
-      <div class="circle rdc4"></div>
-      <div class="circle rdc5"></div>
-      <div class="circle rdc6"></div>
-      <div class="circle rdc7"></div>
-      <div class="circle rdc8"></div>
-      <div class="circle rdc9"></div>
-      <div class="circle rdc10"></div>
-      <div class="circle rdc11"></div>
-      <div class="circle rdc12"></div>
-    </div>
-    <div class="decoration2 right-decor mg-5">
-      <div class="circle rdc1"></div>
-      <div class="circle rdc2"></div>
-      <div class="circle rdc3"></div>
-      <div class="circle rdc4"></div>
-      <div class="circle rdc5"></div>
-      <div class="circle rdc6"></div>
-      <div class="circle rdc7"></div>
-      <div class="circle rdc8"></div>
-      <div class="circle rdc9"></div>
-      <div class="circle rdc10"></div>
-      <div class="circle rdc11"></div>
-      <div class="circle rdc12"></div>
-    </div>
-    <div class="decoration3 right-decor mg-6">
-      <div class="circle rdc1"></div>
-      <div class="circle rdc2"></div>
-      <div class="circle rdc3"></div>
-      <div class="circle rdc4"></div>
-      <div class="circle rdc5"></div>
-      <div class="circle rdc6"></div>
-      <div class="circle rdc7"></div>
-      <div class="circle rdc8"></div>
-      <div class="circle rdc9"></div>
-      <div class="circle rdc10"></div>
-      <div class="circle rdc11"></div>
-      <div class="circle rdc12"></div>
-    </div>
-  </main>
+      </div>
+    </section>
+  </a>
+  <div class="decoration1 right-decor mg-4">
+    <div class="circle rdc1"></div>
+    <div class="circle rdc2"></div>
+    <div class="circle rdc3"></div>
+    <div class="circle rdc4"></div>
+    <div class="circle rdc5"></div>
+    <div class="circle rdc6"></div>
+    <div class="circle rdc7"></div>
+    <div class="circle rdc8"></div>
+    <div class="circle rdc9"></div>
+    <div class="circle rdc10"></div>
+    <div class="circle rdc11"></div>
+    <div class="circle rdc12"></div>
+  </div>
+  <div class="decoration2 right-decor mg-5">
+    <div class="circle rdc1"></div>
+    <div class="circle rdc2"></div>
+    <div class="circle rdc3"></div>
+    <div class="circle rdc4"></div>
+    <div class="circle rdc5"></div>
+    <div class="circle rdc6"></div>
+    <div class="circle rdc7"></div>
+    <div class="circle rdc8"></div>
+    <div class="circle rdc9"></div>
+    <div class="circle rdc10"></div>
+    <div class="circle rdc11"></div>
+    <div class="circle rdc12"></div>
+  </div>
+  <div class="decoration3 right-decor mg-6">
+    <div class="circle rdc1"></div>
+    <div class="circle rdc2"></div>
+    <div class="circle rdc3"></div>
+    <div class="circle rdc4"></div>
+    <div class="circle rdc5"></div>
+    <div class="circle rdc6"></div>
+    <div class="circle rdc7"></div>
+    <div class="circle rdc8"></div>
+    <div class="circle rdc9"></div>
+    <div class="circle rdc10"></div>
+    <div class="circle rdc11"></div>
+    <div class="circle rdc12"></div>
+  </div>
+</main>
 <!--MAIN ENDS-->
+
 <!--DIVIDER STARTS-->
   <div class="divider">
     <div class="small-circle-yellow"></div>
@@ -141,7 +154,8 @@
     <div class="small-circle-yellow"></div>
     <div class="small-circle-blue"></div>
     <div class="small-circle-yellow"></div>
-    <div class="small-circle-blue"></div>    <div class="small-circle yellow"></div>
+    <div class="small-circle-blue"></div>    
+    <div class="small-circle yellow"></div>
     <div class="small-circle-yellow"></div>
     <div class="small-circle-blue"></div>
     <div class="small-circle-yellow"></div>
@@ -151,27 +165,27 @@
 <footer class="footer-grid item4">
   <section class="fi-1">
     <ul class="footer-options">
-      <li class="footer-item">
-        <a href="https://www.linkedin.com/in/adriana-garzon-portela/" target="_blank" rel="noopener noreferrer">
+      <li class="footer-item" id="footer-item1">
+        <a href="https://www.linkedin.com/in/adriana-garzon-portela/" target="_blank" rel="noopener noreferrer" class="footer-link">
           <div class="footer-option-box">
-            <div class="icon-circle footer-hover"><img class="linkedin" src="images/linkedin.png" alt="Linkedin logo"></div>
-            <p>Find me<br>on Linkedin</p>
+            <div class="icon-circle footer-hover" id="footer-hover1"><img class="linkedin" src="images/linkedin.png" alt="Linkedin logo"></div>
+            <p class="footer-label" id="footer-label1">Find me<br>on Linkedin</p>
           </div>
         </a>
       </li>
-      <li class="footer-item">
-        <a href="mailto:adriana.garzon.portela@gmail.com">
+      <li class="footer-item" id="footer-item2">
+        <a href="mailto:adriana.garzon.portela@gmail.com" class="footer-link">
           <div class="footer-option-box">
-            <div class="icon-circle footer-hover"><img class="email" src="images/envelope.png" alt="Image of an envelope"></div>
-            <p>Contact me at<br>adriana.garzon.portela@gmail.com</p>
+            <div class="icon-circle footer-hover" id="footer-hover2"><img class="email" src="images/envelope.png" alt="Image of an envelope"></div>
+            <p class="footer-label" id="footer-label2">Contact me at<br>adriana.garzon.portela@gmail.com</p class="footer-label">
           </div>
         </a>
       </li>
-      <li class="footer-item">
-        <a href="AdrianaGarzonPortela-Resume.pdf" target="_blank" rel="noopener noreferrer">
+      <li class="footer-item" id="footer-item3">
+        <a href="AdrianaGarzonPortela-Resume.pdf" target="_blank" rel="noopener noreferrer" class="footer-link">
           <div class="footer-option-box">
-            <div class="icon-circle footer-hover"><img class="doc" src="images/blank_page.png" alt="Image of a blank document page"></div>
-            <p>Download<br>my Resume</p>
+            <div class="icon-circle footer-hover" id="footer-hover3"><img class="doc" src="images/blank_page.png" alt="Image of a blank document page"></div>
+            <p class="footer-label" id="footer-label3">Download<br>my Resume</p class="footer-label">
           </div>
         </a>
       </li>
@@ -182,5 +196,14 @@
   </section>    
 </footer>
 <!--FOOTER ENDS-->
+
+    <!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--my scripts-->
+    <script src="./js/mycards.js"></script>
+    <script src="./js/footer.js"></script>
+
 </body>
 </html>

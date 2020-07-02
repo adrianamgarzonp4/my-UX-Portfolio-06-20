@@ -8,85 +8,73 @@
     font-size: 18px;
 }
 
-/*HEADER*/
-nav.hg-4 {
-    background-color: transparent;
-    padding-top: 12px;
-}
-
-h1.hg-1, h2.hg-2, h3.hg-3 {
-    text-align: center;
-} 
-
-h1.hg-1 {
-    color: var(--blue, #3a4fab);
-    margin-top: 150px;
-}
-
-h2.hg-2 {
-    margin-top: -12px;
-    font-size: 2.52rem;
-    
-}
-
-h3.hg-3 {
-    font-size: 1.852rem;
-}
-
-.hero-image {
+/**** HEADER ****/
+/* Jumbotoron */
+.jumbotron {
     background-image: url("../images/homepage/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg"); /* The image used */
     background-color: var(--light-grey, #efefef); /* Used if the image is unavailable*/
     height: 800px; /* You must set a specified height */
     background-position: bottom;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-  }
+    margin-bottom: 0px;
+}
+h1.jum-1, h2.jum-2, h3.jum-3 {
+text-align: center;
+} 
+h1.jum-1 {
+    color: var(--blue, #3a4fab);
+    margin-top: 10rem;
+}
+h2.jum-2 {
+    margin-top: -2px;
+    font-size: 2.52rem;
+}
+h3.jum-3 {
+    margin-top: 4rem;
+    font-size: 1.852rem;
+}
+.br-only-xs {
+    display: none;
+}
 
-/*MAIN*/
+/****MAIN****/
+/* Background */
 main {
     background: linear-gradient(var(--white, #ffffff), var(--light-grey, #efefef), var(--white, #ffffff));
     position: relative;
 }
-
-.a-card {
-    text-decoration: none;
-}
-
-/*MAIN - H2*/
+/* h2 */
 h2.title {
     font-size: 2.52rem;
-    width: 55%;
-    margin: auto;
     padding-top: 64px;
     padding-bottom: 48px;
+    z-index: 99;
 }
-
-/*MAIN - SECTION*/
-p.card, h3.card {
+/* Card */
+#card1, #card2, #card3 {
+    text-decoration: none;
+    z-index: 98;
+}
+p.mycard, h3.mycard {
     color: var(--white, #ffffff);
     padding-left: 7%;
     width: 50%;
     z-index: -1;
 }
-
-h3.card {
+h3.mycard {
     padding-top: 4%;
 }
-
-p.card {
+p.mycard {
     padding-bottom: 3%;
 }
-
-section.card {
+section.mycard {
     background-color: var(--blue, #3a4fab);
     position: relative;
-    width: 55%;
-    margin: auto;
     margin-bottom: 64px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
 }
-
-.card-img {
+.mycard-img {
     position: absolute;
     right: 2%;
     top: 10%;
@@ -94,25 +82,52 @@ section.card {
     height: auto;
     z-index: 1;
 }
-
+.mycard-img2 {
+    top: 18%;
+}
+.mycard-img3 {
+    top: 13%;
+}
 .button-container {
     background-color: var(--white, #ffffff);
     width: 100%;
+    height: 6rem;
     position: relative;
 }
-
-a.card {
-    text-decoration: none;
-    position: relative;
-    left: -310px;
+.inner-button-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7%;
 }
-
-section.card:hover {
+.my-button-link {
+    position: relative;
+    background-color: transparent;
+    font: bolder 1.2rem 'Scope One', serif;
+    color: var(--blue, #3a4fab);
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    width:100%
+}
+.link-hover {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 52px;
+    margin-left: 52px;
+}
+/*sectionMyCard Hover --> more hover interactions on mycard.js*/
+section.mycard:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0,0,0,0.50);
 }
-
-/*MAIN - DECORATION*/
+/* decoration */
 .right-decor {
     width: 17%;
     display: grid;
@@ -123,7 +138,6 @@ section.card:hover {
         'c9 . c10 c2 c11'
         '. . . . c12';
 }
-
 .rdc2 { grid-area: c2}
 .rdc3 { grid-area: c3}
 .rdc4 { grid-area: c4}
@@ -135,24 +149,271 @@ section.card:hover {
 .rdc10 { grid-area: c10}
 .rdc11 { grid-area: c11}
 .rdc12 { grid-area: c12}
-
 .decoration1 {
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 2;
+    z-index: 1;
 }
-
 .decoration2 {
     position: absolute;
     top: 50%;
     right: 0px;
-    z-index: 3;
+    z-index: 1;
+    transform: rotate(180deg);
 }
-
 .decoration3 {
     position: absolute;
     bottom: 0px;
-    right: auto;
-    z-index: 3;   
+    left: 0px;
+    z-index: 1; 
+    transform: rotate(45deg);  
+}
+
+/**** MEDIA QUERIES ****/
+@media (max-width:575.98px) { /*Extra small devices*/
+/* JUMBOTRON*/
+    .jumbotron {
+        height: 700px; /* You must set a specified height */
+        background-position: right;
+    }
+    h1.jum-1 {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    h3.jum-3 {
+        margin-top: 3rem;
+        font-size: 1.852rem;
+    }
+    .br-only-xs {
+        display: block;
+    }
+/* CARD */
+    p.mycard, h3.mycard {
+        width: 100%;
+    }
+    h3.mycard {
+        padding-top: 8%;
+        padding-right: 7%;
+    }
+    p.mycard {
+        margin-bottom: 8rem;
+    }
+    .mycard-img {
+        right: 4%;
+        top: 38%;
+        max-width: 90%;
+    }
+    .mycard-img2 {
+        top: 45%;
+    }
+    .mycard-img3 {
+        top: 40%;
+    }
+    .button-container {
+        height: 8rem;
+    }
+    /*View case study-div*/
+    .inner-button-div {
+        justify-content: center;
+        padding-left: 0px;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width:576px) and (max-width: 719.98px) { /*first section of Small devices*/
+/* JUMBOTRON*/
+    .jumbotron {
+        height: 700px; /* You must set a specified height */
+        background-position: right;
+    }
+    h1.jum-1 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    h3.jum-3 {
+        margin-top: 3rem;
+    }
+    .br-only-xs {
+        display: block;
+    }
+    /* CARD */
+    p.mycard, h3.mycard {
+        width: 100%;
+        padding-right: 7%;
+    }
+    h3.mycard {
+        padding-top: 10%;
+    } 
+    p.mycard {
+        margin-bottom: 9rem;
+    }
+    .mycard-img {
+        right: 13%;
+        top: 35%;
+        max-width: 70%;
+    }
+    .mycard-img2 {
+        right: 16%;
+        top: 40%;
+    }
+    .mycard-img3 {
+        right: 14%;
+        top: 38%;
+    }
+    .button-container {
+        height: 8rem;
+    }
+    /*View case study-div*/
+    .inner-button-div {
+        justify-content: center;
+        padding-left: 0px;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width:720px) and (max-width: 767.98px) { /*second section of Small devices*/
+/* JUMBOTRON*/
+    .jumbotron {
+        height: 700px; /* You must set a specified height */
+        background-position: right;
+    }
+    h1.jum-1 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    h3.jum-3 {
+        margin-top: 3rem;
+    }
+    .br-only-xs {
+        display: block;
+    }
+/* CARD */
+    p.mycard, h3.mycard {
+        width: 100%;
+        padding-right: 7%;
+    }
+    h3.mycard {
+        padding-top: 10%;
+    } 
+    p.mycard {
+        margin-bottom: 12rem;
+    }
+    .mycard-img {
+        right: 9%;
+        top: 35%;
+        max-width: 80%;
+    }
+    .mycard-img2 {
+        right: 10%;
+        top: 38%;
+    }
+    .mycard-img3 {
+        right: 10%;
+        top: 33%;
+    }
+    .button-container {
+        height: 8rem;
+    }
+/*View case study-div*/
+    .inner-button-div {
+        justify-content: center;
+        padding-left: 0px;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991.98px) { /*Medium devices*/
+/*JUMBOTRON*/
+    .jumbotron { /*change*/
+        background-position: right;
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    h2.jum-2 { 
+        margin-top: 2rem;
+        /* font-size: 2.52rem; */
+    }
+/* CARD */
+    h3.mycard {
+        padding-top: 8%;
+        width: 100%; /*changed*/
+    }
+    p.mycard {
+        padding-bottom: 3%;
+        width: 45%; /*changed*/
+    }
+    .mycard-img {
+        right: 4%; /*changed*/
+        top: 35%; /*changed*/
+        max-width: 50%; /*changed*/
+    }
+    .mycard-img2 { /*changed*/
+        top: 38%;
+    }
+    .mycard-img3 { /*changed*/
+        top: 28%;
+        max-width: 53%;
+        right: 2%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1423.98px) { /*first section of Extra Large devices*/
+/* CARD */
+    h3.mycard {
+        padding-top: 7%;
+        width: 100%
+    } 
+    p.mycard {
+        padding-bottom: 3%;
+        width: 100%;
+        padding-right: 7%;
+        margin-bottom: 4rem;
+    }
+    .mycard-img {
+        position: absolute;
+        right: 2%;
+        top: 35%;
+        max-width: 50%;
+        height: auto;
+        z-index: 1;
+    }
+    .mycard-img2 {
+        top: 45%;
+        right: 5%;
+    }
+    .mycard-img3 {
+        max-width: 55%;
+        right: 1%;
+        top: 40%;
+    }
+}
+
+@media (min-width: 1424px) and (max-width: 1579.98px) {/*second section of Extra Large devices*/
+/* CARD */
+    h3.mycard {
+        padding-top: 7%;
+        width: 100%
+    } 
+    p.mycard {
+        padding-bottom: 3%;
+        width: 50%;
+        padding-right: 7%;
+        margin-bottom: 2rem;
+    }
+    .mycard-img {
+        position: absolute;
+        right: 2%;
+        top: 25%;
+        max-width: 50%;
+        height: auto;
+        z-index: 1;
+    }
+    .mycard-img2 {
+        top: 35%;
+        right: 5%;
+    }
+    .mycard-img3 {
+        right: 1%;
+        top: 30%;
+    }
 }
