@@ -68,7 +68,6 @@ div.extra-padding {
 
 /*** Case nav ***/
 #case-nav {
-    /* background-color: #c0c0c0; */
     position:fixed;
     top:72px;
     width:100%;
@@ -164,7 +163,7 @@ div.extra-padding {
         background-position:  40% 20%;
     }
     .jum-1 {
-        padding-top: 4rem;
+        padding-top: 10rem;
     }
     .jum-3 {
         text-shadow: 1px 1px 2px #efefef;
@@ -268,7 +267,7 @@ p.p-gb, p.p-gb-above {
     margin-bottom: 0.3rem;
 }
 .row.sec-title {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 p.big-number {
     font: bolder 1.852rem 'Scope One', serif; /*font-style font-variant font-weight font-size/line-height font-family*/
