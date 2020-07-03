@@ -243,7 +243,6 @@ div.rdc1 { grid-area: c1; }
         grid-area: c12; 
         display: none; 
     }
-    
 }
 
 @media (min-width: 992px) { /* large and extra large devices */
@@ -276,4 +275,40 @@ div.rdc1 { grid-area: c1; }
     .about-blurb {
         padding-left: 64px;
     }
+    .ldc1 { 
+        display: block; 
+    }
+    .ldc2 { 
+        display: block; 
+    }
+    .ldc3 { 
+        display: block; 
+    }
+    .ldc4 { 
+        display: block; 
+    }
+    .ldc5 { 
+        display: block; 
+    }
+    .rdc7 { 
+        grid-area: c7; 
+        display: block; 
+    }
+    .rdc9 { 
+        grid-area: c9; 
+        display: block; 
+    }
+    .rdc10 { 
+        grid-area: c10; 
+        display: block; 
+    }
+    .rdc11 { 
+        grid-area: c11; 
+        display: block; 
+    }
+    .rdc12 { 
+        grid-area: c12; 
+        display: block; 
+    }
+
 }
