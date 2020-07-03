@@ -37,20 +37,26 @@ h3.jum-3 {
 .br-only-xs {
     display: none;
 }
-/* jumbotron media query*/
+/* jumbotron media queries*/
 @media (max-width:575.98px) { /*Extra small devices*/
     /* JUMBOTRON*/
         .jumbotron {
             height: 700px; /* You must set a specified height */
-            background-position: right;
+            background-position: 90% 95%;
         }
         h1.jum-1 {
-            margin-top: 3rem;
+            margin-top: 6rem;
             margin-bottom: 1rem;
+            font-size: 4rem;
+        }
+        h2.jum-2 {
+            font-size: 2rem;
         }
         h3.jum-3 {
             margin-top: 3rem;
             font-size: 1.852rem;
+            font-size: 1.8rem;
+            color: var(--dark-grey, #000000);
         }
         .br-only-xs {
             display: block;

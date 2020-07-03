@@ -4,7 +4,7 @@
 /////card1
 $("#card1").on({
     click: function(){
-      $(this).css('transform', 'scale(0.8)');
+      $(this).css('transform', 'scale(0.9)');
     } 
 });
 

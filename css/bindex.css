@@ -1,6 +1,15 @@
-/*HEADER*/
+:root {
+    --black: #000000;
+    --dark-grey: #404040;
+    --white: #ffffff;
+    --blue: #3a4fab;
+    --light-grey: #efefef;
+    --yellow: #f1e72f;
+    font-size: 18px;
+}
 
-/*JUMBOTRON*/
+/**** HEADER ****/
+/* Jumbotoron */
 .jumbotron {
     background-image: url("../images/homepage/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg"); /* The image used */
     background-color: var(--light-grey, #efefef); /* Used if the image is unavailable*/
@@ -9,104 +18,101 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     margin-bottom: 0px;
-  }
-
+}
 h1.jum-1, h2.jum-2, h3.jum-3 {
 text-align: center;
 } 
-
 h1.jum-1 {
     color: var(--blue, #3a4fab);
     margin-top: 10rem;
 }
-
 h2.jum-2 {
     margin-top: -2px;
     font-size: 2.52rem;
-    
 }
-
 h3.jum-3 {
     margin-top: 4rem;
     font-size: 1.852rem;
 }
-
-
-/*MAIN*/
-h2.title {
-    font-size: 2.52rem;
-    width: 55%;
-    margin: auto;
-    padding-top: 64px;
-    padding-bottom: 48px;
+.br-only-xs {
+    display: none;
 }
-
-
-/*CARDS*/
-a.mycard {
-    text-decoration: none;
-    /* position: relative;
-    left: -310px; */
+/* jumbotron media queries*/
+@media (max-width:575.98px) { /*Extra small devices*/
+    /* JUMBOTRON*/
+        .jumbotron {
+            height: 700px; /* You must set a specified height */
+            background-position: 90% 95%;
+        }
+        h1.jum-1 {
+            margin-top: 6rem;
+            margin-bottom: 1rem;
+            font-size: 4rem;
+        }
+        h2.jum-2 {
+            font-size: 2rem;
+        }
+        h3.jum-3 {
+            margin-top: 3rem;
+            font-size: 1.852rem;
+            font-size: 1.8rem;
+            text-shadow: 1px 1px 6px #efefef;
+            text-shadow: 2px 2px 4px #534f4f4c; 
+        }
 }
-
-p.mycard, h3.mycard {
-    background-color: var(--blue);
-    color: var(--white, #ffffff);
-    /* color: var(--white, #ffffff); */
-    /* padding-left: 7%;
-    width: 50%; */
-    /* z-index: -1; */
+@media (min-width:576px) and (max-width: 719.98px) { /*first section of Small devices*/
+    /* JUMBOTRON*/
+        .jumbotron {
+            height: 700px; /* You must set a specified height */
+            background-position: right;
+        }
+        h1.jum-1 {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        h3.jum-3 {
+            margin-top: 3rem;
+        }
+        .br-only-xs {
+            display: block;
+        }
 }
-
-
-p.mycard {
-    color: var(--white, #ffffff);
-    /* padding-bottom: 3%; */
+@media (min-width:720px) and (max-width: 767.98px) { /*second section of Small devices*/
+    /* JUMBOTRON*/
+        .jumbotron {
+            height: 700px; /* You must set a specified height */
+            background-position: right;
+        }
+        h1.jum-1 {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        h3.jum-3 {
+            margin-top: 3rem;
+        }
+        .br-only-xs {
+            display: block;
+        }
 }
-
-div.mycard {
-    background-color: var(--blue, #3a4fab);
-    /* position: relative;
-    width: 55%;
-    margin: auto;
-    margin-bottom: 64px; */
-    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+@media (min-width:768px) and (max-width: 991.98px) { /*Medium devices*/
+    /*JUMBOTRON*/
+        .jumbotron { /*change*/
+            background-position: 45% 95%;
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+        h1.jum-1 {
+            margin-top: 8rem;
+        }
+        h2.jum-2 { 
+            margin-top: 1rem;
+            /* font-size: 2.52rem; */
+        }
+        h3.jum-3 {
+            text-shadow: 1px 1px 6px #efefef;
+            text-shadow: 2px 2px 4px #534f4f4c; 
+        }
+@media (max-width: 767.98px) {
+    br.visual-break {
+        display: block;
+    }
 }
-.case-study-div {
-    background-color: var(--white, #ffffff);
-    /* width: 100%;
-    position: relative; */
-}
-
-.view-case {
-    font: bolder 1.2rem 'Scope One', serif;
-    color: var(--blue, #3a4fab);
-    text-decoration: none;
-}
-
-.a-mycard div.yellowCircle {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    background-color: var(--yellow, #f1e72f);
-    padding-top: 20%;
-    text-align: center;
-}
-
-
-
-/* .inner-button-div {
-    width: 60px;
-    height: 60px; /*OJO:changed from 60 to 100
-    border-radius: 50%;
-    background-color: var(--yellow, #f1e72f);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* section.card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.50);
-} */
-

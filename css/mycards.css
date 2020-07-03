@@ -165,6 +165,10 @@ section.mycard:hover {
         justify-content: center;
         padding-left: 0px;
     }
+    /* decoration */
+    .decoration1 {
+        top: 6rem;
+    }
 }
 @media (min-width:576px) and (max-width: 719.98px) { /*first section of Small devices*/
     /* CARD */

@@ -79,7 +79,8 @@ h5 {
     padding-left: 1rem;
 }
 nav.navbar.navbar-light {
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(255, 255, 255, 0.933);
+    /* background-color: rgba(255, 255, 255, 0.65); */
 }
 .navbar-light .navbar-nav .nav-link { /*navbar links unactive*/
     color: var(--blue, #3a4fab);
@@ -162,10 +163,6 @@ nav.navbar.navbar-light {
     .navbar-light .navbar-nav .nav-link .yellowCircle:hover {
         padding-top: 2%;
     }
-    .navbar-light .navbar-toggler-icon {
-        background-color: var(--yellow, #f1e72f);
-        border-radius: 25%;
-    }
 }
 @media (min-width: 761px) and (max-width: 991px) {
     .navbar-light .navbar-nav .active>.nav-link .yellowCircle {
@@ -183,7 +180,7 @@ nav.navbar.navbar-light {
 @media (max-width: 991px) {
     .navbar-collapse .navbar-nav .nav-link {
         text-align: center;
-        background-color: var(--light-grey, #efefef);
+        background-color: #f1e72f2e;
         margin-left: -25px;
         margin-right: -25px;
     }
