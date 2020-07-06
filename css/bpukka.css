@@ -65,8 +65,13 @@ div.extra-padding {
     padding-right: 15px;
     padding-left: 15px;   
 }
+video {
+    margin: auto;
+}
 
-/*** Case nav ***/
+/*********/
+/******* Case navigation ********/
+/*********/
 #case-nav {
     position:fixed;
     top:72px;
@@ -74,7 +79,7 @@ div.extra-padding {
     z-index:100;
 }
 .bg-light {
-    background-color: var(--dark-grey, #404040)!important;
+    background-color: var(--blue, #3a4fab)!important;
 }
 #navbarDropdownMenuLink {
     color: var(--white, #ffffff);
@@ -201,18 +206,6 @@ div.extra-padding {
 /**Jumbotorn ends**/
 
 /****//***/
-/****//***/
-/****//***/
-/*********** ****** ****** ******* Secondary navigation starts**/
-.sidebar {
-    background-color: var(--light-grey, #efefef);
-    padding-left: 1.5rem;
-    padding-top: 1rem;
-}
-/**Secondary navigation ends**/
-/****//***/
-/****//***/
-/****//***/
 
 /****** Extra padding for sections for correct bookmark display ***/
 #project-overview, #user-research, #data-analysis, #persona-creation, 
@@ -221,7 +214,6 @@ div.extra-padding {
 #prototyping-3, #kpi_next-steps {
     padding-top: 15vh;
 }
-
 
 /**Main starts**/
 a.in-text-link {
@@ -381,6 +373,7 @@ hr {
 }
 .ide-img {
     padding-bottom: 24px;
+    margin: auto;
 }
 .per-sce-goal {
     padding-left: 24px;
@@ -395,9 +388,14 @@ p.text-centered {
 
 /****//*****//*****//******/
 /***!!!!MEDIA QUERIES START!!!!***/
-@media (min-width: 1200px) { /*extra large desktops and up*/
+@media (min-width: 1200px) { /*Only extra large desktops and up*/
     .pie-pukka {
-        margin-top: 6.5rem;
+        align-self: center;
+    }
+    .trip-planning {
+        margin-top: 0rem;
+        align-self: center;
+        padding-left: 50px;
     }
     /*Empathy map starts*/
     #emp-bg-img {
@@ -405,7 +403,7 @@ p.text-centered {
     }
     div.emp-map { 
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr;
         grid-template-rows: 1fr 1fr;
         background-image: url("../images/pukka_trip/empathy-bg.jpg");
         background-position: center;
@@ -416,9 +414,9 @@ p.text-centered {
         justify-content: space-between;
     }
     .em-box {
-        background-color: rgba(15, 184, 180, 60%);
+        background-color: rgba(15, 184, 180, 40%);
         padding-top: 6px;
-        width: 80%;
+        /* width: 20%; */
         min-height: max-content;
         max-height: max-content;
     }
@@ -450,11 +448,43 @@ p.text-centered {
         padding-right: 15px;
         margin-bottom: 0px;
     }
+    #direct-comp {
+        padding-bottom: 25px;
+    }
+
+}
+
+@media (min-width: 992px) { /*Any device larger than medium*/
+    hr {
+        display: none;
+    }
+    .text-highlight.in-gbox {
+        align-self: center;
+        padding-right: 5px;
+    }
+    h3.in-gbox {
+        margin-block-start: 0.5rem;
+    }
+    div.right-side {
+        padding-left: 25px;
+    }
+    .sketch-side-left {
+        padding-right: 30px;
+    }
+    .sketch-side-right {
+        padding-left: 30px;
+    }
 }
 
 @media (max-width: 1199.98px) { /*Any device smaller than a large desktop*/
     .trip-planning {
         margin-top: 3rem;
+    }
+/*** Comp img***/
+    .comp-img {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 16px;
     }
 }
 
@@ -464,31 +494,17 @@ p.text-centered {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) { /*medium devices only*/
-    .st-and-we {
-        padding-left: 24px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 991.8px) { /*Small and medium devices*/
-    .comp-img {
-        width: 50%;
-    }
-}
-
 @media (max-width: 991.98px) { /*extra small, small and medium devices */
-    .comp-img {
-        width: 40%;
-        margin: auto;
-        margin-bottom: 16px;
-    }
-    .sidebar {
-        display: none;
-    }
 /*** Case nav ***/
     #case-nav {
     top:65px;
-}
+    }
+    #next-steps {
+        padding-top: 1rem;
+    }
+    #kpi {
+        padding-top: 0.5rem;
+    }
 }
 
 @media (max-width: 767.98px) {/*small and extra small*/
