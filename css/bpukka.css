@@ -88,6 +88,10 @@ video {
     color: var(--blue, #3a4fab);
     font-size: 1rem;
 }
+.dropdown-item.active {
+    color: var(--black, #000000)!important;
+    background-color: #f1e72f!important;
+}
 
 
 
