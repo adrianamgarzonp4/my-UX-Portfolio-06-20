@@ -1,32 +1,20 @@
-/*
-div.footer-hover:hover {
-    transform: scale(1.5);
-    color: var(--dark-grey, #404040);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-footer section ul li a div.footer-option-box p:hover {
-    color: var(--dark-grey, #404040);
-}
-*/
-
 //Footer interactions
 
 /////Linkedin
 $("#footer-item1").on({
-mouseenter: function(){
-    $("#footer-hover1").css({
-        'transform' : 'scale(1.5)',
-        'box-shadow' : '0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23)'});
-    $("#footer-label1").css({
-        'color' : 'var(--black, #000000)'});
+    mouseenter: function(){
+        $("#footer-hover1").css({
+            'transform' : 'scale(1.5)',
+            'box-shadow' : '0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23)'});
+        $("#footer-label1").css({
+            'color' : 'var(--black, #000000)'});
     },
-mouseleave: function(){
-    $("#footer-hover1").css({
-        'transform' : 'none',
-        'box-shadow' : 'none'});
-    $("#footer-label1").css({
-        'color' : 'var(--blue, #3a4fab)'});
+    mouseleave: function(){
+        $("#footer-hover1").css({
+            'transform' : 'none',
+            'box-shadow' : 'none'});
+        $("#footer-label1").css({
+            'color' : 'var(--blue, #3a4fab)'});
     }
 });
 

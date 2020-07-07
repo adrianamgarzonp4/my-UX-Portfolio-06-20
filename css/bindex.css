@@ -8,6 +8,10 @@
     font-size: 18px;
 }
 
+#projects { /*Selected projects title*/
+    padding-top: 130px;
+}
+
 /**** HEADER ****/
 /* Jumbotoron */
 .jumbotron {
@@ -47,17 +51,15 @@ br.visual-break {
         h1.jum-1 {
             margin-top: 6rem;
             margin-bottom: 1rem;
-            font-size: 4rem;
+            font-size: 3rem;
         }
         h2.jum-2 {
             font-size: 2rem;
         }
         h3.jum-3 {
             margin-top: 3rem;
-            font-size: 1.852rem;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             text-shadow: 1px 1px 6px #efefef;
-            text-shadow: 2px 2px 4px #534f4f4c; 
         }
         br.visual-break {
             display: block;
