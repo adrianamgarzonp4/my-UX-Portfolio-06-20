@@ -180,7 +180,7 @@ nav.navbar.navbar-light {
 @media (max-width: 991px) {
     .navbar-collapse .navbar-nav .nav-link {
         text-align: center;
-        background-color: #f1e72f2e;
+        background-color: #f8f7df;
         margin-left: -25px;
         margin-right: -25px;
     }

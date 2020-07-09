@@ -10,10 +10,10 @@ $(document).ready(function() {
                 'color' : 'var(--blue, #3a4fab)',
                 'background-color' : 'white'})
         },
-        click: function() {
-            $(this).toggleClass("active");
-            $(this).siblings(".dropdown-item").removeClass("active");
-            },
+        // click: function() {
+        //     $(this).toggleClass("active");
+        //     $(this).siblings(".dropdown-item").removeClass("active");
+        //     },
     });
 });
 

@@ -40,7 +40,7 @@
       rel="stylesheet">
 </head>
 
-<body>
+<body  data-spy="scroll" data-target="#case-nav" data-offset="150">
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="index.html">
@@ -80,7 +80,7 @@
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Case Study Sections
+                    PukkaTrip: Table of Contents
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#project-overview">Project Overview</a>
@@ -89,13 +89,12 @@
                     <a class="dropdown-item" href="#persona-creation">Persona Creation</a>
                     <a class="dropdown-item" href="#competitive-analysis">Competitive Analysis</a>
                     <a class="dropdown-item" href="#how-might-we">How Might We Definition</a>
-                    <a class="dropdown-item" href="#ideation-1">Ideation 1</a>
-                    <a class="dropdown-item" href="#prototyping-1">Prototyping 1</a>
-                    <a class="dropdown-item" href="#usability-testing-1">Usability Testing 1</a>
-                    <a class="dropdown-item" href="#ideation-2">Ideation 2</a>
-                    <a class="dropdown-item" href="#prototyping-2">Prototyping 2</a>
-                    <a class="dropdown-item" href="#usability-testing-2">Usability Testing 2</a>
-                    <a class="dropdown-item" href="#prototyping-3">Prototyping 3</a>
+                    <a class="dropdown-item" href="#ideation-1">Ideation</a>
+                    <a class="dropdown-item" href="#prototyping-1">Sketches</a>
+                    <a class="dropdown-item" href="#usability-testing-1">Usability Testing, Round 1</a>
+                    <a class="dropdown-item" href="#prototyping-2">Wireframes</a>
+                    <a class="dropdown-item" href="#usability-testing-2">Usability Testing, Round 2</a>
+                    <a class="dropdown-item" href="#prototyping-3">Hi-Fi Prototype</a>
                     <a class="dropdown-item" href="#kpi_next-steps">KPI & Next Steps</a>
                   </div>
                 </li>
@@ -107,11 +106,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <i class="material-icons md-48">arrow_circle_up</i>
     </button>
-    <!-- 
-        + make video
-        + style side bar
-        + figure out how to make bar sticky
-        + complete story board-->
+<!-- + complete story board-->
     <div class="d-xl-flex flex-xl-row">
         <div class="container-fluid col-lg-10 col-xl-10 padding15">              
             <main class="container-fluid col-lg-12 col-xl-12">              
@@ -136,8 +131,12 @@
                         <h3>Methodology</h3>
                         <p class="p-gb">I approached this problem from a place of curiosity. That curiosity turned into empathy as I interviewed users. Once I understood their main pain points, I narrowed the scope of the problem by defining a user persona and scenario. As a next step, I ideated potential solutions, prioritized, designed, and tested the user flow and visual design a couple of times. Based on the user feedback, I revised my wireframes and prototyped a minimum valuable product that addressed the users' pain points and stood out from the competition.</p>
                     </div>  
-                    <div class="row grey-box">
-                        <img src="images/pukka_trip/methodology.png" class="method img-fluid" alt="User Research, Research Data Analysis, Persona Creation, Competitive Analysis, How Might We Statement, Ideation, Prototyping, Usability Testing">
+                    <div id="met-md-lg-xl" class="row grey-box">
+                        <img src="./images/pukka_trip/methodology.png" class="method img-fluid" alt="User Research, Research Data Analysis, Persona Creation, Competitive Analysis, How Might We Statement, Ideation, Prototyping, Usability Testing">
+                        <p class="legend">Steps and artifacts that supported my approach to solving this problem</p>
+                    </div>
+                    <div id="met-xs-sm" class="row grey-box">
+                        <img src="./images/pukka_trip/methodology-xs.png" class="method img-fluid img-centered" alt="User Research, Research Data Analysis, Persona Creation, Competitive Analysis, How Might We Statement, Ideation, Prototyping, Usability Testing">
                         <p class="legend">Steps and artifacts that supported my approach to solving this problem</p>
                     </div>
                 </section>
@@ -191,8 +190,12 @@
                         </div>
                     </div>
                     <div class="row grey-box">
-                        <div class="row time-planning chart col-xl-5">
-                            <img src="images/pukka_trip/trip-planning-time.png" alt="Pie chart: 39%:1-3 months, 36%:3-6 months, 13%: 6 or more months, 9%: Less than 1 month, 4%: No response" class="img-fluid pie-pukka">
+                        <div id="timeplanning-allbutxs" class="row time-planning chart col-xl-5">
+                            <img src="./images/pukka_trip/trip-planning-time.png" alt="Pie chart: 39%:1-3 months, 36%:3-6 months, 13%: 6 or more months, 9%: Less than 1 month, 4%: No response" class="img-fluid pie-pukka">
+                            <p class="legend col-12">How far in advance do people plan their trips</p>
+                        </div>
+                        <div id="timeplanning-xs" class="row time-planning chart col-xl-5">
+                            <img src="./images/pukka_trip/xs-sm-trip-planning-time.png" alt="Pie chart: 39%:1-3 months, 36%:3-6 months, 13%: 6 or more months, 9%: Less than 1 month, 4%: No response" class="img-fluid pie-pukka">
                             <p class="legend col-12">How far in advance do people plan their trips</p>
                         </div>
                         <div class="row chart col-xl-7">
@@ -451,8 +454,11 @@
                             <li>Reducing friction at entry-point<p><em>Note:</em> This user flow incorporates the task of creating an account to submit a poll. Although it can be off-putting for some users, we are assuming that our user does most of his planning on his own and way in advance. Therefore, he is used to creating accounts to manage and keep track of the information he needs for his trip. There will be wording clarifying the convenience of creating an account on the screen.</p></li>
                         </ul>                
                     </div>
-                    <div class="row grey-box extra-space-b4">
-                        <img src="images/pukka_trip/critical-path-user-flow.png" alt="Critical path user flow: Launch App, Enter destination, Show search results, Narrow results with filters, Does user want specific information?, if yes, Submit a poll, Does user have an account?, if no, Sign up with Google, Facebook or email, Provide location information?, if yes, Enter location manually, Enter trip name, Write and send poll question, Enable notifications?, if yes or no, Is user willing to respond to a  poll?, Write and send poll response, Go to profile to review sent poll question responses, Save relevant responses to trip" class="img-fluid edge-to-edge-img">
+                    <div id="userflow-lg-xl-devices" class="row grey-box extra-space-b4">
+                        <img src="images/pukka_trip/critical-path-user-flow.png" alt="Critical path user flow: Launch App, Enter destination, Show search results, Narrow results with filters, Does user want specific information?, if yes, Submit a poll, Does user have an account?, if no, Sign up with Google, Facebook or email, Provide location information?, if yes, Enter location manually, Enter trip name, Write and send poll question, Enable notifications?, if yes or no, Is user willing to respond to a  poll?, Write and send poll response, Go to profile to review sent poll question responses, Save relevant responses to trip" class="img-fluid">
+                    </div>
+                    <div id="userflow-xs-sm-md-devices" class="row grey-box extra-space-b4">
+                        <img src="./images/pukka_trip/xs-sm-critical-path-user-flow.png" alt="Critical path user flow: Launch App, Enter destination, Show search results, Narrow results with filters, Does user want specific information?, if yes, Submit a poll, Does user have an account?, if no, Sign up with Google, Facebook or email, Provide location information?, if yes, Enter location manually, Enter trip name, Write and send poll question, Enable notifications?, if yes or no, Is user willing to respond to a  poll?, Write and send poll response, Go to profile to review sent poll question responses, Save relevant responses to trip" class="img-fluid img-centered">
                     </div>
                 </section>
                 <section id="prototyping-1">
@@ -644,7 +650,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="ideation-2">
+                <!-- <section id="ideation-2">
                     <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
                         <div class="container-fluid">
                             <div class="row sec-title">
@@ -663,7 +669,7 @@
                             <li>Revise language around the need to create an account to use critical app functionality</li>
                         </ul>
                     </div>
-                </section>
+                </section> -->
                 <section id="prototyping-3">
                     <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
                         <div class="container-fluid">
@@ -671,8 +677,20 @@
                                 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                                     <img src="images/methodology/protyping.png" alt="Icon with word Prototyping" class="img-fluid met-img">
                                 </div>
-                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-xl-9">Prototype with revised wireframes</h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                                <h2 class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-xl-9">Translating user feedback into design improvements and producing a hi-fi prototype</h2>
                             </div>
+                        </div>
+                        <div>
+                            <h3 class="h2-h3">Ideation iteration</h3 class="h2-h3">
+                                <p>After receiving valuable feedback from the user and analyzing the results, I translated the takeaways into design goals and revised the wireframes</p>
+                                <h4>Iteration goals</h4>
+                                <ul>
+                                    <li>Preserve critical path since it was successful in helping users accomplish their goal</li>
+                                    <li>Improve visual design to address usability and discoverability issues by getting rid of small font sizes and increasing button contrast</li>
+                                    <li>Add features aimed to increase efficiency for advance users</li>
+                                    <li>Revise language around the need to create an account to use critical app functionality</li>
+                                </ul> 
+                                <h4 class="extra-space">High fidelity prototype</h4>     
                         </div>
                         <div id="video-container" class="d-flex">
                             <video width="340" height="auto" controls>

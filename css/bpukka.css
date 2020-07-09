@@ -21,6 +21,10 @@ ScopeOne Font scale
     font-size: 18px;
 }
 
+body {
+    position: relative;
+}
+
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
@@ -44,7 +48,7 @@ div.extra-space-b4, img.extra-space-b4 {
     margin-top: 2rem;    
 }
 
-h3.extra-space, li.extra-space {
+h3.extra-space, li.extra-space, h4.extra-space {
     margin-bottom: 2rem;
 }
 
@@ -79,10 +83,10 @@ video {
     z-index:100;
 }
 .bg-light {
-    background-color: var(--blue, #3a4fab)!important;
+    background-color: var(--yellow, #3a4fab)!important;
 }
 #navbarDropdownMenuLink {
-    color: var(--white, #ffffff);
+    color: var(--black, #ffffff);
 }
 .dropdown-item {
     color: var(--blue, #3a4fab);
@@ -388,6 +392,18 @@ p.text-centered {
 #legend-matrix {
     margin-bottom: 4rem;
 }
+#userflow-lg-xl-devices {
+    display: none;
+}
+.img-centered {
+    margin: auto;
+}
+#timeplanning-allbutxs {
+    display: none;
+}
+#met-md-lg-xl {
+    display: none;
+}
 
 
 /****//*****//*****//******/
@@ -478,6 +494,12 @@ p.text-centered {
     .sketch-side-right {
         padding-left: 30px;
     }
+    #userflow-lg-xl-devices {
+        display: block;
+    }
+    #userflow-xs-sm-md-devices {
+        display: none;
+    }
 }
 
 @media (max-width: 1199.98px) { /*Any device smaller than a large desktop*/
@@ -511,13 +533,31 @@ p.text-centered {
     }
 }
 
+@media (min-width: 768px) { /*medium and larger screens*/
+    #met-md-lg-xl {
+        display: block;
+    }
+    #met-xs-sm {
+        display: none;
+    }
+}
+
 @media (max-width: 767.98px) {/*small and extra small*/
     .right-box {
         margin-top: -4rem;
     }
 }
 
-@media (max-width: 575.98px) {/*Extra small devices*/
+@media (min-width: 576px) { /*all screens but xs*/
+    #timeplanning-allbutxs {
+        display: block;
+    }
+    #timeplanning-xs {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) { /*Extra small devices*/
     .ul-neg-margin {
         margin-top: -16px;
     }
