@@ -396,7 +396,8 @@ p.text-centered {
     display: none;
 }
 .img-centered {
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 #timeplanning-allbutxs {
     display: none;
@@ -554,6 +555,7 @@ p.text-centered {
     }
     #timeplanning-xs {
         display: none;
+        width: 50%;
     }
 }
 
