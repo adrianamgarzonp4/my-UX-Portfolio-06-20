@@ -403,14 +403,18 @@ p.text-centered {
     display: none;
 }
 #timeplanning-xs {
-    width: 300px;
+    width: 120px;
     height: auto;
 }
 #met-md-lg-xl {
     display: none;
 }
 #met-xs-sm {
-    width: 300px;
+    width: 120px;
+    height: auto;
+}
+#userflow-xs-sm-md-devices {
+    width: 120px;
     height: auto;
 }
 
