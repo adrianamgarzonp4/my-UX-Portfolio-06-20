@@ -392,9 +392,7 @@ p.text-centered {
 #legend-matrix {
     margin-bottom: 4rem;
 }
-#userflow-lg-xl-devices {
-    display: none;
-}
+
 .img-centered {
     margin-right: auto;
     margin-left: auto;
@@ -402,19 +400,14 @@ p.text-centered {
 #timeplanning-allbutxs {
     display: none;
 }
-#timeplanning-xs {
-    width: 120px;
-    height: auto;
-}
 #met-md-lg-xl {
     display: none;
 }
-#met-xs-sm {
-    width: 120px;
-    height: auto;
+#userflow-lg-xl-devices {
+    display: none;
 }
-#userflow-xs-sm-md-devices {
-    width: 120px;
+.img-xs {
+    width: 300px;
     height: auto;
 }
 
