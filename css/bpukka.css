@@ -44,11 +44,11 @@ p.extra-space {
     margin-bottom: 4rem;
 }
 
-div.extra-space-b4, img.extra-space-b4, p.extra-space-b4 {
+div.extra-space-b4, img.extra-space-b4, p.extra-space-b4, h4.extra-space-b4 {
     margin-top: 2rem;    
 }
 
-h3.extra-space, li.extra-space, h4.extra-space {
+h3.extra-space, li.extra-space {
     margin-bottom: 2rem;
 }
 
@@ -68,9 +68,9 @@ div.extra-padding {
     padding-right: 15px;
     padding-left: 15px;   
 }
-/* #video-container {
-    justify-content: center;
-} */
+video {
+    margin: auto;
+} 
 
 /*********/
 /******* Case navigation ********/
@@ -141,7 +141,7 @@ div.extra-padding {
 #competitive-analysis, #how-might-we, #ideation-1, #prototyping-1, 
 #usability-testing-1, #ideation-2, #prototyping-2, #usability-testing-2,
 #prototyping-3, #kpi_next-steps {
-    padding-top: 30vh;
+    padding-top: 23vh;
 }
 
 /**Main starts**/
@@ -314,8 +314,7 @@ p.text-centered {
     margin-bottom: 4rem;
 }
 .img-centered {
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
 }
 #timeplanning-allbutxs {
     display: none;
@@ -325,6 +324,11 @@ p.text-centered {
 }
 #userflow-lg-xl-devices {
     display: none;
+}
+#flow-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -503,6 +507,7 @@ p.text-centered {
     }
     #userflow-xs-sm-md-devices {
         display: none;
+        width: 100%;
     }
 }
 
