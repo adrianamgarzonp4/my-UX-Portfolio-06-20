@@ -44,7 +44,7 @@ p.extra-space {
     margin-bottom: 4rem;
 }
 
-div.extra-space-b4, img.extra-space-b4 {
+div.extra-space-b4, img.extra-space-b4, p.extra-space-b4 {
     margin-top: 2rem;    
 }
 
@@ -68,9 +68,9 @@ div.extra-padding {
     padding-right: 15px;
     padding-left: 15px;   
 }
-#video-container {
+/* #video-container {
     justify-content: center;
-}
+} */
 
 /*********/
 /******* Case navigation ********/
@@ -133,84 +133,6 @@ div.extra-padding {
     font-weight: bolder;
     font-size: 1.2rem;
 }
-/********* Media queries for jumbotron only **/
-@media (min-width: 576px) and (max-width: 767.98px) { /* Small and medium devices */
-    .jumbotron {
-        height: 900px; /* You must set a specified height */
-        background-position:  40%;
-        margin-top: -100px;
-        margin-bottom: 0px;
-        /* padding-top: 30%; */
-    }
-    #headings-all-devices {
-        display: block;
-    }
-    #headings-xs-devices {
-        display: none;
-    }
-    .jum-1 {
-        color: var(--blue, #3a4fab);
-        padding-top: 40%;
-        padding-bottom: 12px;
-    }
-    .jum-2 {
-        padding-bottom: 12px;
-        font-weight: bolder;
-        font-size: 2.52rem;
-    }
-    .jum-3 {
-        font-size: 1.361rem;
-    }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-    #headings-all-devices {
-        display: block;
-        padding-left: 1rem;
-    }
-    #headings-xs-devices {
-        display: none;
-    }
-    .jumbotron {
-        height: 700px;
-        background-position:  40% 20%;
-    }
-    .jum-1 {
-        padding-top: 10rem;
-    }
-    .jum-3 {
-        text-shadow: 1px 1px 2px #efefef;
-    }
-}
-@media (min-width: 992px) { /* large devices */
-    .jumbotron {
-        height: 900px; /* You must set a specified height */
-        background-position: center;
-        margin-top: -100px;
-    }
-    #headings-all-devices {
-        display: block;
-    }
-    #headings-xs-devices {
-        display: none;
-    }
-    .jum-1 {
-        color: var(--blue, #3a4fab);
-        padding-top: 30%;
-        padding-bottom: 24px;
-    }
-    .jum-2 {
-        padding-bottom: 24px;
-        font-weight: bolder;
-        font-size: 2.52rem;
-    }
-    .jum-3 {
-        color: var(--black, #000000);
-        font-weight: bolder;
-        font-size: 1.361rem;
-        text-shadow: 1px 1px 4px #efefef;
-    }
-}
-/**Jumbotorn ends**/
 
 /****//***/
 
@@ -219,7 +141,7 @@ div.extra-padding {
 #competitive-analysis, #how-might-we, #ideation-1, #prototyping-1, 
 #usability-testing-1, #ideation-2, #prototyping-2, #usability-testing-2,
 #prototyping-3, #kpi_next-steps {
-    padding-top: 15vh;
+    padding-top: 20vh;
 }
 
 /**Main starts**/
@@ -408,6 +330,88 @@ p.text-centered {
 
 /****//*****//*****//******/
 /***!!!!MEDIA QUERIES START!!!!***/
+
+/********* Media queries for JUMBOTRON ONLY **/
+@media (min-width: 576px) and (max-width: 767.98px) { /* Small and medium devices */
+    .jumbotron {
+        height: 900px; /* You must set a specified height */
+        background-position:  40%;
+        margin-top: -100px;
+        margin-bottom: 0px;
+        /* padding-top: 30%; */
+    }
+    #headings-all-devices {
+        display: block;
+    }
+    #headings-xs-devices {
+        display: none;
+    }
+    .jum-1 {
+        color: var(--blue, #3a4fab);
+        padding-top: 40%;
+        padding-bottom: 12px;
+    }
+    .jum-2 {
+        padding-bottom: 12px;
+        font-weight: bolder;
+        font-size: 2.52rem;
+    }
+    .jum-3 {
+        font-size: 1.361rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #headings-all-devices {
+        display: block;
+        padding-left: 1rem;
+    }
+    #headings-xs-devices {
+        display: none;
+    }
+    .jumbotron {
+        height: 700px;
+        background-position:  40% 20%;
+    }
+    .jum-1 {
+        padding-top: 10rem;
+    }
+    .jum-3 {
+        text-shadow: 1px 1px 2px #efefef;
+    }
+}
+@media (min-width: 992px) { /* large devices */
+    .jumbotron {
+        height: 900px; /* You must set a specified height */
+        background-position: center;
+        margin-top: -100px;
+    }
+    #headings-all-devices {
+        display: block;
+    }
+    #headings-xs-devices {
+        display: none;
+    }
+    .jum-1 {
+        color: var(--blue, #3a4fab);
+        padding-top: 30%;
+        padding-bottom: 24px;
+    }
+    .jum-2 {
+        padding-bottom: 24px;
+        font-weight: bolder;
+        font-size: 2.52rem;
+    }
+    .jum-3 {
+        color: var(--black, #000000);
+        font-weight: bolder;
+        font-size: 1.361rem;
+        text-shadow: 1px 1px 4px #efefef;
+    }
+}
+/**Jumbotorn ends**/
+
+
+/**** All other media queries***/
 @media (min-width: 1200px) { /*Only extra large desktops and up*/
     .pie-pukka {
         align-self: center;
