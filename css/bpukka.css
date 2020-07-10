@@ -402,8 +402,16 @@ p.text-centered {
 #timeplanning-allbutxs {
     display: none;
 }
+#timeplanning-xs {
+    width: 300px;
+    height: auto;
+}
 #met-md-lg-xl {
     display: none;
+}
+#met-xs-sm {
+    width: 300px;
+    height: auto;
 }
 
 
@@ -555,7 +563,6 @@ p.text-centered {
     }
     #timeplanning-xs {
         display: none;
-        width: 50%;
     }
 }
 
