@@ -392,7 +392,6 @@ p.text-centered {
 #legend-matrix {
     margin-bottom: 4rem;
 }
-
 .img-centered {
     margin-right: auto;
     margin-left: auto;
@@ -407,8 +406,7 @@ p.text-centered {
     display: none;
 }
 .img-xs {
-    width: 300px;
-    height: auto;
+    width: 80%;
 }
 
 
