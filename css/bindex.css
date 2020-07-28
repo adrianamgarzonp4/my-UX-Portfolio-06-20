@@ -1,10 +1,21 @@
-:root {
+/* :root {
     --black: #000000;
     --dark-grey: #404040;
     --white: #ffffff;
     --blue: #3a4fab;
     --light-grey: #efefef;
-    --yellow: #f1e72f;
+    --yellow: #f1e72f;   ffec8c
+    font-size: 18px;
+} */
+
+:root {
+    --black: #000000;
+    --dark-grey: #404040;
+    --white: #ffffff;
+    --blue: #4a515f;
+    --light-grey: #dbdbdb;
+    /*--light-grey: #dedcdc; /*for footer*/
+    --yellow: #ffe565;
     font-size: 18px;
 }
 
@@ -15,105 +26,161 @@ h2.title#projects { /*Selected projects title*/
 /**** HEADER ****/
 /* Jumbotoron */
 .jumbotron {
-    background-image: url("../images/homepage/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg"); /* The image used */
+    background-image: url("../images/homepage/hero_image.jpg"); /* The image used */
     background-color: var(--light-grey, #efefef); /* Used if the image is unavailable*/
-    height: 800px; /* You must set a specified height */
-    background-position: bottom;
+    height: 400px; /* You must set a specified height */
+    background-position: 90% 95%;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     margin-bottom: 0px;
+    position: relative;
 }
-h1.jum-1, h2.jum-2, h3.jum-3 {
-text-align: center;
-} 
-h1.jum-1 {
-    color: var(--blue, #3a4fab);
-    margin-top: 10rem;
-}
-h2.jum-2 {
-    margin-top: -2px;
-    font-size: 2.52rem;
-}
-h3.jum-3 {
-    margin-top: 4rem;
-    font-size: 1.852rem;
-}
-br.visual-break {
+#logo-on-jumbo {
     display: none;
 }
+h1.jum-1, h2.jum-2, h3.jum-3 {
+    display: none;
+    color: var(--black, #3a4fab);
+} 
+#logo-out-jumbo {
+    margin: auto;
+    max-width: 30%;
+}
+h1.jum-1a, h2.jum-2a, h3.jum-3a {
+    color: var(--black, #3a4fab);
+    text-align: center;
+}
+h1.jum-1a {
+    /* margin-top: 1rem; */
+    font-size: 2.52rem;
+}
+h2.jum-2a, h3.jum-3a {
+    margin-top: 1rem;
+    font-size: 1.361rem;
+}
 /* jumbotron media queries*/
-@media (max-width:575.98px) { /*Extra small devices*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
     /* JUMBOTRON*/
         .jumbotron {
-            height: 700px; /* You must set a specified height */
-            background-position: 90% 95%;
+            height: 800px; /* You must set a specified height */
+            background-position: center;
         }
-        h1.jum-1 {
-            margin-top: 6rem;
-            margin-bottom: 1rem;
-            font-size: 3rem;
+        #logo-out-jumbo, #headings-xs {
+            display: none;
         }
-        h2.jum-2 {
-            font-size: 2rem;
-        }
-        h3.jum-3 {
-            margin-top: 3rem;
-            font-size: 1.5rem;
-            text-shadow: 1px 1px 6px #efefef;
-        }
-        br.visual-break {
+        h1.jum-1, h2.jum-2, h3.jum-3 {
             display: block;
         }
-}
-@media (min-width:576px) and (max-width: 719.98px) { /*first section of Small devices*/
-    /* JUMBOTRON*/
-        .jumbotron {
-            height: 700px; /* You must set a specified height */
-            background-position: right;
-        }
-        h1.jum-1 {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-        }
-        h3.jum-3 {
-            margin-top: 3rem;
-        }
-        br.visual-break {
+        #logo-on-jumbo {
             display: block;
-        }
-}
-@media (min-width:720px) and (max-width: 767.98px) { /*second section of Small devices*/
-    /* JUMBOTRON*/
-        .jumbotron {
-            height: 700px; /* You must set a specified height */
-            background-position: right;
+            max-width: 30%;
+            margin-top: 7rem;
+            margin-left: -6px;
         }
         h1.jum-1 {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-        }
-        h3.jum-3 {
-            margin-top: 3rem;
-        }
-        br.visual-break {
-            display: block;
-        }
-}
-@media (min-width:768px) and (max-width: 991.98px) { /*Medium devices*/
-    /*JUMBOTRON*/
-        .jumbotron { /*change*/
-            background-position: 45% 95%;
-            background-size: cover; /* Resize the background image to cover the entire container */
-        }
-        h1.jum-1 {
-            margin-top: 8rem;
-        }
-        h2.jum-2 { 
             margin-top: 1rem;
-            /* font-size: 2.52rem; */
+            font-size: 2.52rem;
+            margin-left: -6px;
         }
-        h3.jum-3 {
-            text-shadow: 1px 1px 6px #efefef;
-            text-shadow: 2px 2px 4px #534f4f4c; 
+        h2.jum-2, h3.jum-3 {
+            margin-top: 1rem;
+            font-size: 1.361rem;
+            margin-left: -6px;
         }
+        br.visual-break {
+            display: block;
+        }
+}
+@media (min-width:768px) and (max-width: 991.98px) { 
+    .jumbotron {
+        height: 800px; /* You must set a specified height */
+        background-position: center;
+    }
+    #logo-out-jumbo, #headings-xs {
+        display: none;
+    }
+    h1.jum-1, h2.jum-2, h3.jum-3 {
+        display: block;
+    }
+    #logo-on-jumbo {
+        display: block;
+        max-width: 30%;
+        margin-top: 2rem;
+        margin-left: 20px;
+    }
+    h1.jum-1 {
+        margin-top: 1rem;
+        font-size: 2.52rem;
+        margin-left: 20px;
+    }
+    h2.jum-2, h3.jum-3 {
+        margin-top: 1rem;
+        font-size: 1.361rem;
+        margin-left: 20px;
+    }
+    br.visual-break {
+        display: block;
+    }
+} 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .jumbotron {
+        height: 800px; /* You must set a specified height */
+        background-position: center;
+    }
+    #logo-out-jumbo, #headings-xs {
+        display: none;
+    }
+    h1.jum-1, h2.jum-2, h3.jum-3 {
+        display: block;
+    }
+    #logo-on-jumbo {
+        display: block;
+        max-width: 20%;
+        margin-top: 2rem;
+        margin-left: 20px;
+    }
+    h1.jum-1 {
+        margin-top: 1rem;
+        font-size: 2.52rem;
+        margin-left: 20px;
+    }
+    h2.jum-2, h3.jum-3 {
+        margin-top: 1rem;
+        font-size: 1.361rem;
+        margin-left: 20px;
+    }
+    br.visual-break, br.visual-break-2 {
+    display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .jumbotron {
+        height: 800px; /* You must set a specified height */
+        background-position: center;
+    }
+    #logo-out-jumbo, #headings-xs {
+        display: none;
+    }
+    h1.jum-1, h2.jum-2, h3.jum-3 {
+        display: block;
+    }
+    #logo-on-jumbo {
+        display: block;
+        max-width: 20%;
+        margin-top: 4rem;
+        margin-left: 120px;
+    }
+    h1.jum-1 {
+        margin-top: 1rem;
+        font-size: 2.52rem;
+        margin-left: 120px;
+    }
+    h2.jum-2, h3.jum-3 {
+        margin-top: 1rem;
+        font-size: 1.361rem;
+        margin-left: 120px;
+    }
+    br.visual-break, br.visual-break-2 {
+    display: none;
+    }
 }

@@ -254,7 +254,7 @@ footer section ul li a div.footer-option-box div {
 }
 .copyright {
     font-size: 0.735rem;
-    color: var(--blue, #3a4fab);
+    color: var(--black, #000000);
     text-align: center;
     margin-top: 1rem; 
 }

@@ -1,7 +1,7 @@
 /****MAIN****/
 /* Background */
 .main {
-    background: linear-gradient(var(--white, #ffffff), var(--light-grey, #efefef), var(--white, #ffffff));
+    background: (var(--white)); /*linear-gradient(var(--white, #ffffff), var(--light-grey, #efefef), var(--white, #ffffff)); */
     position: relative;
 }
 /* h2 */

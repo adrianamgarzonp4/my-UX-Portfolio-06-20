@@ -11,7 +11,7 @@ ScopeOne Font scale
 0.397em (7.14px)	A Visual Type Scale
 */
 
-:root {
+/* :root {
     --black: #000000;
     --dark-grey: #404040;
     --white: #ffffff;
@@ -19,7 +19,19 @@ ScopeOne Font scale
     --light-grey: #efefef;
     --yellow: #f1e72f;
     font-size: 18px;
+} */
+
+:root {
+    --black: #000000;
+    --dark-grey: #404040;
+    --white: #ffffff;
+    --blue: #4a515f;
+    --light-grey: #dbdbdb;
+    /*--light-grey: #dedcdc; /*for footer*/
+    --yellow: #ffe565;
+    font-size: 18px;
 }
+
 
 body {
     position: relative;
