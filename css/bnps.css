@@ -1,0 +1,605 @@
+/* TEXT SCALE
+ScopeOne Font scale
+4.666em (84.00px)	A Visual Type Scale
+3.429em (61.73px)	A Visual Type Scale
+2.52em (45.36px)	A Visual Type Scale
+1.852em (33.33px)	A Visual Type Scale
+1.361em (24.49px)	A Visual Type Scale
+1em (18.00px)	A Visual Type Scale
+0.735em (13.23px)	A Visual Type Scale
+0.54em (9.72px)	A Visual Type Scale
+0.397em (7.14px)	A Visual Type Scale
+*/
+
+/* :root {
+    --black: #000000;
+    --dark-grey: #404040;
+    --white: #ffffff;
+    --blue: #3a4fab;
+    --light-grey: #efefef;
+    --yellow: #f1e72f;
+    font-size: 18px;
+} */
+
+:root {
+    --black: #000000;
+    --dark-grey: #404040;
+    --white: #ffffff;
+    --blue: #4a515f;
+    --light-grey: #f1f1f1;
+    /* --light-grey: #dbdbdb; */
+    /*--light-grey: #dedcdc; /*for footer*/
+    --yellow: #ffe565;
+    font-size: 18px;
+}
+
+
+body {
+    position: relative;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.nopadding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.nopadding_right {
+    padding-right: 0px;
+}
+
+.nopadding_left {
+    padding-left: 0px;
+}
+
+p.extra-space {
+    margin-bottom: 4rem;
+}
+
+div.extra-space-b4, img.extra-space-b4, p.extra-space-b4, h4.extra-space-b4, h3.extra-space-b4 {
+    margin-top: 2rem;    
+}
+
+h3.extra-space, li.extra-space {
+    margin-bottom: 2rem;
+}
+
+img.extra-space {
+    margin-bottom: 0.5rem;
+}
+
+#wire-img-single {
+    max-width: 50%;
+}
+
+div.extra-padding {
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.padding15 {
+    padding-right: 15px;
+    padding-left: 15px;   
+}
+video {
+    margin: auto;
+} 
+
+.nobullet-ul {
+    list-style-type: none;
+}
+
+.white_box {
+    background-color: white; 
+    border-radius: 5px; 
+    padding: 15px;
+}
+
+/*********/
+/******* Case navigation ********/
+/*********/
+#case-nav {
+    position:fixed;
+    top:72px;
+    width:100%;
+    z-index:100;
+}
+.bg-light {
+    background-color: var(--yellow, #3a4fab)!important;
+}
+#navbarDropdownMenuLink {
+    color: var(--black, #ffffff);
+}
+.dropdown-item {
+    color: var(--blue, #3a4fab);
+    font-size: 1rem;
+}
+.dropdown-item.active {
+    color: var(--black, #000000)!important;
+    background-color: #f1e72f!important;
+}
+
+
+
+/***Jumbotron starts***/
+.jumbotron {
+    background-image: url("../images/pukka_trip/bg.jpg"); /*The image used*/
+    background-color: rgba(15, 184, 180, 60%); /* Used if the image is unavailable */
+    height: 480px; /*You must set a specified height */
+    background-position: 80% 10%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /*Resize the background image to cover the entire container */
+    margin-bottom: 0px;
+}
+#headings-all-devices {
+    display: none;
+}
+#headings-xs-devices {
+    padding-left: 30px;
+}
+.jum-1 {
+    color: var(--blue, #3a4fab);
+    text-shadow: 1px 1px 4px #efefef;
+    padding-top: 2rem;
+    padding-bottom: 8px;
+    font-size: 3.5rem; 
+}
+.jum-2 {
+    padding-bottom: 8px;
+    font-weight: bolder;
+    font-size: 1.852rem;
+    color: var(--blue, #3a4fab);
+    text-shadow: 1px 1px 4px #efefef;
+}
+.jum-3 {
+    color: var(--black, #000000);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+/****//***/
+
+/****** Extra padding for sections for correct bookmark display ***/
+#project-overview, #protopersona, #research, #data-analysis, 
+#goal-setting, #ideation-ia, #ideation-wireframes, #ideation-ui, 
+#prototyping, #kpi_next-steps {
+    padding-top: 23vh;
+}
+
+/**Main starts**/
+a.in-text-link {
+    color: var(--blue, #3a4fab);
+    text-decoration: underline;
+}
+h2 {
+    font-size: 1.852rem;
+}
+h3 {
+    font-size: 1.2rem;
+    color: var(--black, #000000);
+    margin-top: 2rem;
+}
+.h2-h3 {
+    margin-top: 0.5rem;
+}
+.h2-h3-po {
+    margin-top: 1.5rem;
+}
+.grey-box {
+    background-color: var(--light-grey, #efefef);
+    padding: 36px;
+}
+p.legend {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.h3-gbox {
+    margin-block-start: 0rem;
+    color: var(--blue, #3a4fab);
+}
+p.p-gb, p.p-gb-above {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.met-img {
+    max-height: 130px; 
+    max-width: 136px;
+    margin-bottom: 0.3rem;
+}
+.row.sec-title {
+    margin-bottom: 2.5rem;
+}
+p.big-number {
+    font: bolder 1.852rem 'Scope One', serif; /*font-style font-variant font-weight font-size/line-height font-family*/
+    color: var(--blue,#3a4fab);
+    /* padding-right: 1.5rem; */
+}
+.number-text {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 1rem;
+}
+.percentage-text {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+p.stat {
+    margin-bottom: 0px;
+    margin-right: 1.5rem;
+}
+.trip-planning {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    font-size: 0.8rem;
+    height: 250px;
+    margin-top: 2rem;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.tp-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color:  rgba(15, 184, 180, 80%);
+}
+.tp-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-color:  rgba(15, 184, 180, 60%);
+}
+.tp-3 {
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+    background-color:  rgba(15, 184, 180, 40%);
+}
+.tp-4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color:  rgba(15, 184, 180, 20%);
+    font-size: 0.5rem;
+}
+.tp-5 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-color:  rgba(15, 184, 180, 20%);
+    font-size: 0.5rem;
+}
+.tp-6 {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+    background-color:  rgba(15, 184, 180, 20%);
+    font-size: 0.5rem;
+}
+.tp-1, .tp-2, .tp-3, .tp-4, .tp-5, .tp-6 {
+    border: solid 0.5px var(--white, #ffffff);
+    padding-left: 4px;
+    padding-top: 4px;
+}
+.chart {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+div.emp-map { /*empathy map*/
+    background-color: var(--light-grey, #efefef); /* Used if the image is unavailable*/
+    padding: 36px;
+}
+.em-box {
+    background-color: rgba(15, 184, 180, 40%);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    border-radius: 16px;
+    width: 100%;
+    /* min-height: fit-content; review if need this
+    max-height: auto; */
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.emp-map-h4 {
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+    font-weight: 600;
+}
+.text-columns {
+    justify-content: space-between;
+} 
+.comp-img {
+    margin-bottom: 16px;
+}
+.comp-screens {
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 0px; /*has to be 0 for medium and small devices*/
+    margin-bottom: 16px;
+}
+.h4-gb {
+    margin-bottom: 24px;
+}
+hr {
+    border: solid 1px #4040407a;
+    width: 70%;
+}
+.ide-img {
+    padding-bottom: 24px;
+    margin: auto;
+}
+.per-sce-goal {
+    padding-left: 24px;
+}
+p.text-centered {
+    text-align: center;
+}
+#legend-matrix {
+    margin-bottom: 4rem;
+}
+.img-centered {
+    margin: auto;
+}
+#timeplanning-allbutxs {
+    display: none;
+}
+#met-md-lg-xl {
+    display: none;
+}
+#userflow-lg-xl-devices {
+    display: none;
+}
+#flow-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/****//*****//*****//******/
+/***!!!!MEDIA QUERIES START!!!!***/
+
+/********* Media queries for JUMBOTRON ONLY **/
+@media (min-width: 576px) and (max-width: 767.98px) { /* Small and medium devices */
+    .jumbotron {
+        height: 900px; /* You must set a specified height */
+        background-position:  40%;
+        margin-top: -100px;
+        margin-bottom: 0px;
+        /* padding-top: 30%; */
+    }
+    #headings-all-devices {
+        display: block;
+    }
+    #headings-xs-devices {
+        display: none;
+    }
+    .jum-1 {
+        color: var(--blue, #3a4fab);
+        padding-top: 40%;
+        padding-bottom: 12px;
+    }
+    .jum-2 {
+        padding-bottom: 12px;
+        font-weight: bolder;
+        font-size: 2.52rem;
+    }
+    .jum-3 {
+        font-size: 1.361rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #headings-all-devices {
+        display: block;
+        padding-left: 1rem;
+    }
+    #headings-xs-devices {
+        display: none;
+    }
+    .jumbotron {
+        height: 700px;
+        background-position:  40% 20%;
+    }
+    .jum-1 {
+        padding-top: 10rem;
+    }
+    .jum-3 {
+        text-shadow: 1px 1px 2px #efefef;
+    }
+}
+@media (min-width: 992px) { /* large devices */
+    .jumbotron {
+        height: 900px; /* You must set a specified height */
+        background-position: center;
+        margin-top: -100px;
+    }
+    #headings-all-devices {
+        display: block;
+    }
+    #headings-xs-devices {
+        display: none;
+    }
+    .jum-1 {
+        color: var(--blue, #3a4fab);
+        padding-top: 30%;
+        padding-bottom: 24px;
+    }
+    .jum-2 {
+        padding-bottom: 24px;
+        font-weight: bolder;
+        font-size: 2.52rem;
+    }
+    .jum-3 {
+        color: var(--black, #000000);
+        font-weight: bolder;
+        font-size: 1.361rem;
+        text-shadow: 1px 1px 4px #efefef;
+    }
+}
+/**Jumbotorn ends**/
+
+
+/**** All other media queries***/
+@media (min-width: 1200px) { /*Only extra large desktops and up*/
+    .pie-pukka {
+        align-self: center;
+    }
+    .trip-planning {
+        margin-top: 0rem;
+        align-self: center;
+        padding-left: 50px;
+    }
+    /*Empathy map starts*/
+    #emp-bg-img {
+        display: none;    
+    }
+    div.emp-map { 
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 1fr 1fr;
+        background-image: url("../images/pukka_trip/empathy-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* margin-left: -20%;
+        margin-right: -20%; */
+        justify-content: space-between;
+    }
+    .em-box {
+        background-color: rgba(15, 184, 180, 40%);
+        padding-top: 6px;
+        /* width: 20%; */
+        min-height: max-content;
+        max-height: max-content;
+    }
+    .emp-map-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-top: 0.8rem;
+    }
+    .emp-map-2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-top: 0.8rem;
+        justify-self: end;
+    }
+    .emp-map-3 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin-top: 0.8rem;
+    }
+    .emp-map-4 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-top: 0.8rem;
+        justify-self: end;
+    }
+    /*Competitive analysis*/
+    .comp-screens {
+        justify-content: flex-start;
+        padding-right: 15px;
+        margin-bottom: 0px;
+    }
+    #direct-comp {
+        padding-bottom: 25px;
+    }
+
+}
+
+@media (min-width: 992px) { /*Any device larger than medium*/
+    hr {
+        display: none;
+    }
+    .text-highlight.in-gbox {
+        align-self: center;
+        padding-right: 5px;
+    }
+    h3.in-gbox {
+        margin-block-start: 0.5rem;
+    }
+    div.right-side {
+        padding-left: 25px;
+    }
+    .sketch-side-left {
+        padding-right: 30px;
+    }
+    .sketch-side-right {
+        padding-left: 30px;
+    }
+    #userflow-lg-xl-devices {
+        display: block;
+    }
+    #userflow-xs-sm-md-devices {
+        display: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199.98px) { /*Any device smaller than a large desktop*/
+    .trip-planning {
+        margin-top: 3rem;
+    }
+/*** Comp img***/
+    .comp-img {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1199.98px) {/*medium and large devices*/
+    div.emp-map{
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 991.98px) { /*extra small, small and medium devices */
+/*** Case nav ***/
+    #case-nav {
+    top:65px;
+    }
+    #next-steps {
+        padding-top: 1rem;
+    }
+    #kpi {
+        padding-top: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) { /*medium and larger screens*/
+    #met-md-lg-xl {
+        display: block;
+    }
+    #met-xs-sm {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {/*small and extra small*/
+    .right-box {
+        margin-top: -4rem;
+    }
+}
+
+@media (min-width: 576px) { /*all screens but xs*/
+    #timeplanning-allbutxs {
+        display: block;
+    }
+    #timeplanning-xs {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) { /*Extra small devices*/
+    .ul-neg-margin {
+        margin-top: -16px;
+    }
+}
+
+
