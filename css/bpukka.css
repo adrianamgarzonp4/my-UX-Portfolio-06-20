@@ -95,10 +95,10 @@ video {
     z-index:100;
 }
 .bg-light {
-    background-color: var(--yellow, #3a4fab)!important;
+    background-color: var(--yellow, #ffe565)!important;
 }
 #navbarDropdownMenuLink {
-    color: var(--black, #ffffff);
+    color: var(--black, #000000);
 }
 .dropdown-item {
     color: var(--blue, #3a4fab);
@@ -106,7 +106,7 @@ video {
 }
 .dropdown-item.active {
     color: var(--black, #000000)!important;
-    background-color: #f1e72f!important;
+    background-color: var(--yellow, #ffe565)!important;
 }
 
 
