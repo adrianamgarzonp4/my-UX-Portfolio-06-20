@@ -13,7 +13,7 @@ mouseenter: function(){
     $("#lh1").css({
     'color' : 'var(--black, #000000)',
     'box-shadow' : '0 5px 10px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23)',
-    'background-color' : 'var(--yellow, #f1e72f)'});
+    'background-color' : 'var(--yellow, #ffe565)'});
 },
 mouseleave: function(){
     $("#lh1").css({

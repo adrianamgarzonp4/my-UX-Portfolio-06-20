@@ -124,7 +124,7 @@ video {
 }
 .dropdown-item.active {
     color: var(--black, #000000)!important;
-    background-color: #f1e72f!important;
+    background-color: var(--yellow, #ffe565)!important;
 }
 
 

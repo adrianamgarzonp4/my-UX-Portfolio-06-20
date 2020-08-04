@@ -3,7 +3,7 @@ $(document).ready(function() {
         mouseenter: function() {
             $(this).css({
                 'color' : 'var(--black, #000000)',
-                'background-color' : 'var(--yellow, #f1e72f)'})
+                'background-color' : 'var(--yellow, #ffe565)'})
         },
         mouseleave: function() {
             $(this).css({
